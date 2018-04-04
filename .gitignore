@@ -9,6 +9,7 @@
 *.db-shm
 *.db-wal
 *.html
+*.pyc
 OZW_Log.txt
 home-assistant.log
 home-assistant_v2.db
@@ -22,6 +23,7 @@ pyozw.sqlite
 ip_bans.yaml
 docker-compose.yml
 custom-components/
+custom_components/media_player/__pycache__/
 .*
 !/.gitignore
 config
