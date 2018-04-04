@@ -1,0 +1,13 @@
+  alias: Verlichting buiten ochtend aan
+  initial_state: True
+  trigger:
+    - platform: time
+      at: '07:00:00'
+  condition:
+    condition: sun
+    before: sunrise
+  action:
+    service: light.turn_on
+    entity_id: group.buiten
+    data:
+      transition: 2

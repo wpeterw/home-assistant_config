@@ -1,0 +1,9 @@
+  trigger:
+    - platform: state
+      entity_id: light.dressoir
+      to: 'off'
+  action:
+    service: switch.turn_off
+    entity_id:
+      - switch.hanglamp_voor
+      - switch.hanglamp_achter

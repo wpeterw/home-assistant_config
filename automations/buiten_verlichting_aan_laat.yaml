@@ -1,0 +1,9 @@
+  alias: Buiten verlichting aan laat
+  initial_state: True
+  trigger:
+    platform: time
+    hours: 21
+    minutes: 0
+  action:
+    - service: scene.turn_on
+      entity_id: scene.buiten_avond_laat

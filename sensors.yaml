@@ -1,0 +1,256 @@
+
+  - platform: haveibeenpwned
+    email: 
+      - !secret email1
+      - !secret email2
+
+  - platform: darksky
+    api_key: 24eb76794723bc0c7e7033756af87d2e
+    language: nl
+    monitored_conditions:
+      - icon
+      - summary
+      - temperature
+      - apparent_temperature
+      - temperature_max
+      - temperature_min
+      - apparent_temperature_max
+      - apparent_temperature_min
+      - humidity
+      - precip_probability
+      - precip_type
+      - minutely_summary
+      - hourly_summary
+      - daily_summary
+
+  - platform: dsmr
+    host: 192.168.1.155
+    port: 2001
+    dsmr_version: 4
+
+  - platform: mqtt_room
+    device_id: fb564ff0af5f
+    name: 'Mercedes'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 30
+
+  - platform: mqtt_room
+    device_id: cc6458a8b1da
+    name: 'Juul'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 30  
+  
+  - platform: mqtt_room
+    device_id: d402fae919f7
+    name: 'Jorn'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 30
+
+  - platform: mqtt_room
+    device_id: dd7eeaa9f962
+    name: 'Volkswagen'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 300
+
+  - platform: google_travel_time
+    name: Reistijd Peter ochtend
+    api_key: !secret maps_api_key
+    origin: !secret maps_home
+    destination: !secret maps_werk_peter
+    options:
+      mode: driving
+
+  - platform: google_travel_time
+    name: Reistijd Kasia ochtend
+    api_key: !secret maps_api_key
+    origin: !secret maps_home
+    destination: !secret maps_werk_kasia
+    options:
+      mode: driving
+
+  - platform: google_travel_time
+    name: Reistijd Peter avond
+    api_key: !secret maps_api_key
+    origin: !secret maps_werk_peter
+    destination: !secret maps_home
+    options:
+      mode: driving
+
+  - platform: google_travel_time
+    name: Reistijd Kasia avond
+    api_key: !secret maps_api_key
+    origin: !secret maps_werk_kasia
+    destination: !secret maps_home
+    options:
+      mode: driving
+
+#  - platform: apcupsd
+#    resources:
+#      - bcharge
+#      - linev
+#      - loadpct
+#      - nominv
+#      - nompower
+#      - numxfers
+#      - outputv
+#      - status
+#      - timeleft
+#      - tonbatt
+  
+  - platform: pi_hole
+    host: 192.168.1.63
+
+# mqtt ##############################################################
+
+  - platform: mqtt
+    name: "Verbruik wasmachine actueel"
+    state_topic: "tele/sonoff_wasmachine/ENERGY"
+    value_template: "{{ value_json.Power }}"
+    unit_of_measurement: "W"
+  - platform: mqtt
+    name: "Verbruik wasmachine vandaag"
+    state_topic: "tele/sonoff_wasmachine/ENERGY"
+    value_template: "{{ value_json.Today }}"
+    unit_of_measurement: "kWh"
+  - platform: mqtt
+    name: "Verbruik wasmachine gisteren"
+    state_topic: "tele/sonoff_wasmachine/ENERGY"
+    value_template: "{{ value_json.Yesterday }}"
+    unit_of_measurement: "kWh"
+  - platform: mqtt
+    name: "Verbruik droger actueel"
+    state_topic: "tele/sonoff_droger/ENERGY"
+    value_template: "{{ value_json.Power }}"
+    unit_of_measurement: "W"
+  - platform: mqtt
+    name: "Verbruik droger vandaag"
+    state_topic: "tele/sonoff_droger/ENERGY"
+    value_template: "{{ value_json.Today }}"
+    unit_of_measurement: "kWh"
+  - platform: mqtt
+    name: "Verbruik droger gisteren"
+    state_topic: "tele/sonoff_droger/ENERGY"
+    value_template: "{{ value_json.Yesterday }}"
+    unit_of_measurement: "kWh"
+  - platform: mqtt
+    name: "Verbruik koelkast en vriezer actueel"
+    state_topic: "tele/koelkast_vriezer/ENERGY"
+    value_template: "{{ value_json.Power }}"
+    unit_of_measurement: "W"
+  - platform: mqtt
+    name: "Verbruik koelkast en vriezer vandaag"
+    state_topic: "tele/koelkast_vriezer/ENERGY"
+    value_template: "{{ value_json.Today }}"
+    unit_of_measurement: "kWh"
+  - platform: mqtt
+    name: "Verbruik koelkast en vriezer gisteren"
+    state_topic: "tele/koelkast_vriezer/ENERGY"
+    value_template: "{{ value_json.Yesterday }}"
+    unit_of_measurement: "kWh"
+
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /
+      - type: memory_use_percent
+      - type: load_1m
+      - type: last_boot
+      - type: since_last_boot
+
+  - platform: statistics
+    name: statistics droger value
+    entity_id: sensor.verbruik_droger_actueel
+
+  - platform: statistics
+    name: statistics wasmachine value
+    entity_id: sensor.verbruik_wasmachine_actueel
+  
+  - platform: statistics
+    name: statistics stroomverbruik huidig
+    entity_id: sensor.power_consumption
+
+  - platform: fastdotcom
+
+# templates #########################################################
+
+  - platform: template
+    sensors:
+      meterstandstroomtotaal:
+        friendly_name: 'Meterstand stroom totaal'
+        unit_of_measurement: 'kwh'
+        value_template: >-
+            {{(float(states.sensor.power_consumption_low.state) + float(states.sensor.power_consumption_normal.state|round(-1) ))}}
+      achterdeur_sensor:
+        friendly_name: 'Achterdeur'
+        icon_template: mdi:glassdoor
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d000105cba2.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      deur_wasruimte_sensor:
+        friendly_name: 'Deur wasruimte'
+        icon_template: mdi:glassdoor
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d0001184e9a.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      dakraam_slaapkamer_sensor:
+        friendly_name: 'Dakraam slaapkamer'
+        icon_template: mdi:window-open
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d0001070b12.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      dakraam_slaapkamer_juul_sensor:
+        friendly_name: 'Dakraam slaapkamer Juul'
+        icon_template: mdi:window-open
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d000110d992.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      dakraam_overloop_sensor:
+        friendly_name: 'Dakraam overloop'
+        icon_template: mdi:window-open
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d00013ee023.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      dakraam_slaapkamer_jorn_sensor:
+        friendly_name: 'Dakraam slaapkamer Jorn'
+        icon_template: mdi:window-open
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d0001258205.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      dakraam_badkamer_voor_sensor:
+        friendly_name: 'Dakraam badkamer voor'
+        icon_template: mdi:window-open
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d0001142609.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      dakraam_badkamer_achter_sensor:
+        friendly_name: 'Dakraam badkamer achter'
+        icon_template: mdi:window-open
+        value_template: '{% if states.binary_sensor.door_window_sensor_158d00013fdece.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
+      ups_status:
+        friendly_name: 'UPS status'
+        icon_template: mdi:information-outline
+        value_template: '{% if states.sensor.ups_status_2.state == "ONLINE"%} Online {%- else -%} Offline {%- endif -%}'
+      beweging_veranda:
+        friendly_name: 'Beweging veranda'
+        icon_template: mdi:eye
+        value_template: '{% if states.binary_sensor.motion_sensor_158d00010e4e6d.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      beweging_badkamer:
+        friendly_name: 'Beweging badkamer'
+        icon_template: mdi:eye
+        value_template: '{% if states.binary_sensor.motion_sensor_158d0001656eb0.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      beweging_hal:
+        friendly_name: 'Beweging hal'
+        icon_template: mdi:eye
+        value_template: '{% if states.binary_sensor.motion_sensor_158d000117325d.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      beweging_slaapkamer:
+        friendly_name: 'Beweging slaapkamer'
+        icon_template: mdi:eye
+        value_template: '{% if states.binary_sensor.motion_sensor_158d0001108677.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      beweging_bijkeuken:
+        friendly_name: 'Beweging bijkeuken'
+        icon_template: mdi:eye
+        value_template: '{% if states.sensor.motion_bijkeuken.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      beweging_keuken:
+        friendly_name: 'Beweging keuken'
+        icon_template: mdi:eye
+        value_template: '{% if states.binary_sensor.fibaro_system_fgms001_motion_sensor_sensor.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      beweging_woonkamer:
+        friendly_name: 'Beweging woonkamer'
+        icon_template: mdi:eye
+        value_template: '{% if states.binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
+      playstation:
+        friendly_name: Playstation 4
+        icon_template: mdi:google-controller
+        value_template: "{% if is_state('device_tracker.playstation_4', 'home') %}on{% else %}off{% endif %}"
+        
+

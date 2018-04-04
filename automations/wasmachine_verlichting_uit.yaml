@@ -1,0 +1,12 @@
+  alias: Lamp wasruimte uit
+  initial_state: True
+  trigger:
+    platform: state
+    entity_id: binary_sensor.door_window_sensor_158d0001184e9a
+    to: 'off'
+  action:
+    service: light.turn_off
+    entity_id: light.wasruimte
+    data:
+      transition: 2
+

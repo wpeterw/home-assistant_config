@@ -1,0 +1,11 @@
+  alias: Pause Sonos at night
+  initial_state: True
+  trigger:
+    platform: time
+    hours: 23
+    minutes: 30
+  action:
+    service: media_player.media_pause
+    entity_id:
+      - media_player.kitchen
+      

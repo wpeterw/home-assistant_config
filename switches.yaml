@@ -1,0 +1,41 @@
+- platform: mqtt
+  name: "Wasmachine"
+  state_topic: "stat/sonoff_wasmachine/POWER"
+  command_topic: "cmnd/sonoff_wasmachine/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+- platform: mqtt
+  name: "Wasdroger"
+  state_topic: "stat/sonoff_droger/POWER"
+  command_topic: "cmnd/sonoff_droger/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+- platform: mqtt
+  name: "Hanglamp voor"
+  state_topic: "cmnd/sonoff_lamp2/POWER"
+  command_topic: "cmnd/sonoff_lamp2/POWER"
+  qos: 1
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+- platform: mqtt
+  name: "Hanglamp achter"
+  state_topic: "cmnd/sonoff_lamp1/POWER"
+  command_topic: "cmnd/sonoff_lamp1/POWER"
+  qos: 1
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+- platform: mqtt
+  name: "Radio"
+  state_topic: "stat/radio/POWER"
+  command_topic: "cmnd/radio/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+

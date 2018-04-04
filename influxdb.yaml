@@ -1,0 +1,10 @@
+  influxdb:
+    host: 192.168.1.26
+    include:
+      entities:
+       - sensor.beweging_slaapkamer
+       - sensor.humidity_158d0001109dc6
+       - sensor.hourly_gas_consumption
+       - sensor.power_consumption
+       - sensor.temperature_158d0001109dc6
+       - sensor.achterdeur_sensor

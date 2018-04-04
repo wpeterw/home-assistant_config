@@ -1,0 +1,365 @@
+  default_view:
+    view: yes
+    name: Home
+    entities:
+      - group.woonkamer
+      - group.hal
+      - group.keuken
+      - group.bijkeuken
+      - group.wc
+      - group.boven
+      - group.buiten
+      - group.weer
+      - group.kelder
+      - group.sensoren
+      - group.reistijd_ochtend
+      - group.reistijd_avond
+      - group.battery_levels
+  woonkamer_view:
+    view: yes
+    name: Beneden
+    entities:
+      - group.woonkamer
+      - group.hal
+      - group.keuken
+      - group.kelder
+      - group.bijkeuken
+  keuken_view:
+    view: yes
+    name: keuken
+    entities:
+      - group.keuken
+  kelder_view:
+    view: yes
+    name: Kelder
+    entities:
+      - group.kelder
+  boven_view:
+    view: yes
+    name: Boven
+    entities: 
+    - group.boven
+    - group.badkamer
+    - group.slaapkamer
+    - group.slaapkamer_juul
+    - group.slaapkamer_jorn
+  buiten_view:
+    view: yes
+    name: Buiten
+    entities:
+      group.buiten
+  beweging_view:
+    - group.beweging
+  scenes_view:
+    view: yes
+    name: scenes
+    entities:
+      - group.scenes
+  media_view:
+    view: yes
+    name: Media
+    entities:
+      - group.media
+  family_view:
+    view: yes
+    name: Presence
+    entities:
+      - group.family
+  energie_view:
+    view: yes
+    name: Energie
+    entities:
+      - group.meter_readings
+      - group.wasmachine_en_droger
+  automation_view:
+    view: no
+    name: Automation
+    entities:
+      - group.automationgroup
+  calendar_view:
+    view: no
+    name: Calendar
+    entities:
+      - group.google_calendar
+      - group.reistijd_ochtend
+      - group.reistijd_avond
+  system_view:
+    view: yes
+    name: System
+    entities:
+      - group.ups
+      - group.systemmonitor
+      - group.internet
+      - group.pihole
+      - group.devices
+      - group.batterylevels
+      - group.haveibeenpwnd
+  sensoren_view:
+    view: yes
+    name: Sensoren
+    entities:
+      - group.sensoren
+  ####GROUPS
+  woonkamer:
+    name: Woonkamer
+    entities:
+      - light.dressoir
+      - light.lamp_achter_bank
+      - light.eettafel
+      - light.lotek_lamp
+      - light.hue_iris
+      - switch.hanglamp_voor
+      - switch.hanglamp_achter
+      - sensor.fibaro_system_fgms001_motion_sensor_temperature_2
+      - sensor.fibaro_system_fgms001_motion_sensor_luminance_2
+      - camera.woonkamer
+  hanglampen:
+    name: Hanglampen
+    entities:
+      - switch.hanglamp_voor
+      - switch.hanglamp_achter
+  Weer:
+    name: Weer
+    entities:
+      - sun.sun
+      - sensor.dark_sky_temperature 
+      - sensor.dark_sky_daily_high_temperature
+      - sensor.dark_sky_daily_low_temperature
+      - sensor.dark_sky_precip_probability
+      - sensor.dark_sky_humidity
+      - sensor.dark_sky_pressure
+      - sensor.dark_sky_hourly_summary
+      - sensor.dark_sky_daily_summary
+  buiten:
+    name: Buiten
+    entities:
+      - light.voordeur
+      - light.achtergevel
+      - light.veranda
+      - light.lantaarn_jacuzzi
+      - light.zwaveme_zme_0643305433_wall_flushmountable_dimmer_level
+      - light.tuin_links
+      - light.lantaarn_achter
+      - light.tuin_rechts
+      - light.garage_achter
+      - light.garage_zijkant
+      - light.garage_voor
+      - light.lantaarn_oprit
+      - light.lantaarn_oprit_voor
+      - light.tuinpad_voor
+      - light.lantaarn_tuinpad
+  boven:
+    name: Boven
+    entities:
+      - light.lamp_boven_trap
+      - light.overloop
+      - light.hal_overloop
+  badkamer:
+    name: Badkamer
+    entities:
+      - light.badkamer_1
+      - light.badkamer_2
+      - light.badkamer_3
+      - light.badkamer_4
+      - light.badkamer_5
+      - light.badkamer_6
+      - light.badkamer_7
+  slaapkamer_juul:
+    name: Slaapkamer Juul
+    entities:
+      - light.slaapkamer_juul_achter
+      - light.slaapkamer_juul_voor
+  slaapkamer:
+    name: Slaapkamer
+    entities:
+      - light.slaapkamer_voor
+      - light.slaapkamer_achter
+      - sensor.temperature_158d0001109dc6
+      - sensor.humidity_158d0001109dc6
+  slaapkamer_jorn:
+    name: Slaapkamer Jorn
+    entities:
+      - light.slaapkamer_jorn_1
+      - light.slaapkamer_jorn_2
+      - light.slaapkamer_jorn_3
+      - light.slaapkamer_jorn_4      
+      - light.slaapkamer_jorn_5
+  keuken:
+    name: Keuken
+    entities:
+      - sensor.fibaro_system_fgms001_motion_sensor_temperature
+      - sensor.fibaro_system_fgms001_motion_sensor_luminance
+  bijkeuken:
+    name: bijkeuken
+    entities:
+      - light.bijkeuken
+      - light.wasruimte
+      - switch.greenwave_powernode_1_port_switch_3_0
+      - switch.wasmachine
+      - switch.wasdroger
+  kelder:
+    name: Kelder
+    entities:
+      - sensor.temperature_158d00010f74bc
+      - sensor.humidity_158d00010f74bc
+  hal:
+    name: hal
+    entities:
+      - light.hal_beneden
+  wc:
+    name: wc
+    entities:
+      - light.tradfri_group_2
+  media:
+    name: Media
+    entities:
+      - media_player.playstation_4
+      - media_player.kitchen
+      - media_player.living_room
+      - media_player.tv
+      - media_player.ziggo_mediabox
+      - media_player.sony_bravia_tv
+      - media_player.kdl55w809c
+      - media_player.spotify
+  Sensoren:
+    name: Sensoren
+    entities:
+      - sensor.beweging_woonkamer
+      - sensor.beweging_hal
+      - sensor.beweging_keuken
+      - sensor.motion_bijkeuken
+      - sensor.beweging_veranda
+      - sensor.beweging_slaapkamer
+      - sensor.achterdeur_sensor
+      - sensor.beweging_badkamer
+      - sensor.dakraam_slaapkamer_jorn_sensor
+      - sensor.dakraam_slaapkamer_sensor
+      - sensor.dakraam_slaapkamer_juul_sensor
+      - sensor.dakraam_overloop_sensor
+      - sensor.dakraam_badkamer_achter_sensor
+      - sensor.dakraam_badkamer_voor_sensor
+  family:
+    name: Presence
+    entities:
+      - sensor.mercedes
+      - sensor.volkswagen
+      - sensor.juul
+      - sensor.jorn
+  meter_readings:
+    name: Energie meters
+    entities:
+      - sensor.power_consumption
+      - sensor.power_consumption_normal
+      - sensor.power_consumption_low
+      - sensor.meterstandstroomtotaal
+      - sensor.gas_consumption
+      - sensor.hourly_gas_consumption
+      - sensor.greenwave_powernode_1_port_previous_reading
+  automationgroup:
+    name: Automation
+    entities:
+      - automation.buiten_verlichting_aan
+      - automation.buiten_verlichting_uit
+      - automation.verlichting_woonkamer_aan
+      - automation.verlichting_woonkamer_uit
+      - automation.verlichting_buiten_ochtend_aan
+      - automation.verlichting_buiten_ochtend_uit
+      - automation.upload_gas_usage_to_mindergasnl
+  scenes:
+    name: scenes
+    entities:
+      - scene.hanglampen_aan
+      - scene.hanglampen_uit
+      - scene.buiten_avond_laat
+      - scene.buiten_avond_vroeg
+      - scene.woonkamer_gedimd
+      - scene.woonkamer_normaal
+      - scene.woonkamer_ochtend
+  google_calendar:
+    name: Calendar
+    entities:
+      - calendar.peterwieringagmailcom
+  reistijd_ochtend:
+    name: Reistijd ochtend
+    entities:
+      - sensor.reistijd_peter_ochtend
+      - sensor.reistijd_kasia_ochtend
+  reistijd_avond:
+    name: Reistijd avond
+    entities:
+      - sensor.reistijd_peter_avond
+      - sensor.reistijd_kasia_avond
+  battery_levels:
+    name: Batterij levels
+    entities:
+      - sensor.fibaro_system_fgms001_motion_sensor_general_5_0_battery
+      - sensor.fibaro_system_fgms001_motion_sensor_general_2_0_battery
+  ups:
+    name: APC CS650
+    entities:
+      - sensor.ups_battery
+      - sensor.ups_input_voltage
+      - sensor.ups_load
+      - sensor.ups_nominal_input_voltage
+      - sensor.ups_nominal_output_power
+      - sensor.ups_output_voltage
+      - sensor.ups_status
+      - sensor.ups_time_left
+      - sensor.ups_time_on_battery
+      - sensor.ups_transfer_count 
+  systemmonitor:
+    name: System monitor
+    entities:
+      - sensor.last_boot
+      - sensor.since_last_boot
+      - sensor.average_load_1m
+      - sensor.disk_use_
+      - sensor.ram_use
+      - sensor.fastcom_download
+      - sensor.ssl_cert_expiry
+  pihole:
+    name: PiHole
+    entities:
+      - sensor.pihole_ads_blocked_today
+      - sensor.pihole_ads_percentage_blocked_today
+      - sensor.pihole_dns_queries_today
+      - sensor.pihole_domains_blocked
+  haveibeenpwnd:
+    name: Have I been pwnd
+    entities:
+      - sensor.breaches_peterwieringagmailcom
+      - sensor.breaches_peterwieringame
+  wasmachine_en_droger:
+    name: Wassen, drogen en koelen
+    entities:
+      - sensor.verbruik_droger_vandaag
+      - sensor.verbruik_droger_gisteren      
+      - sensor.verbruik_wasmachine_vandaag
+      - sensor.verbruik_wasmachine_gisteren
+      - sensor.verbruik_koelkast_en_vriezer_vandaag
+      - sensor.verbruik_koelkast_en_vriezer_gisteren
+      - sensor.verbruik_droger_actueel
+      - sensor.verbruik_wasmachine_actueel
+      - sensor.verbruik_koelkast_en_vriezer_actueel    
+  devices:
+    name: Devices
+    entities:
+      - device_tracker.hue_benedentomatolocal
+      - device_tracker.hue_boventomatolocal
+      - device_tracker.tradfri_hubtomatolocal
+      - device_tracker.lumigatewayv3_miio44685363tomatolocal
+      - device_tracker.harmony_hubtomatolocal
+      - device_tracker.amazon12505eab4tomatolocal
+      - device_tracker.slimmemetertomatolocal
+      - device_tracker.eneco001061879tomatolocal
+      - device_tracker.piholetomatolocal
+      - device_tracker.diskstationtomatolocal
+      - device_tracker.sony_braviatomatolocal
+      - device_tracker.upcgw_4600tomatolocal
+ 
+  batterylevels:
+   name: Batterij status
+   entities:
+      - sensor.badkamer 
+      - sensor.wc
+

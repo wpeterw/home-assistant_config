@@ -1,0 +1,31 @@
+  - name: Woonkamer ochtend
+    entities:
+        light.eettafel:
+            state: on
+            transition: 2
+            brightness: 180
+            rgb_color: [255,147,41]
+        light.dressoir:
+            state: on
+            transition: 2
+            brightness: 180
+            rgb_color: [255,147,41]
+        light.lotek_lamp:
+            state: on
+            transition: 2
+            brightness: 180
+            rgb_color: [255,147,41]
+        light.lamp_achter_bank:
+            state: on
+            transition: 2
+            brightness: 180
+            rgb_color: [255,147,41]
+        light.hue_iris:
+            state: on
+            transition: 2
+            brightness: 180
+            rgb_color: [255,147,41]
+        switch.hanglamp_voor:
+            state: on
+        switch.hanglamp_achter:
+            state: on

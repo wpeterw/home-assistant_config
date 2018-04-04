@@ -1,0 +1,13 @@
+  use_include_order: True
+  include:
+    entities:
+     - sensor.achterdeur_sensor    
+     - sensor.dark_sky_temperature
+     - sensor.hourly_gas_consumption
+     - sensor.temperature_158d00010f74bc
+     - sensor.temperature_158d0001109dc6
+     - sensor.humidity_158d0001109dc6
+     - sensor.humidity_158d00010f74bc
+     - media_player.playstation_4
+     - media_player.sony_bravia_tv
+     - group.wc

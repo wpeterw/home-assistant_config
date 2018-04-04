@@ -1,0 +1,6 @@
+  - name: Hanglampen uit
+    entities:
+        switch.hanglamp_voor:
+            state: off
+        switch.hanglamp_achter:
+            state: off

@@ -1,0 +1,74 @@
+homeassistant:
+  name: Home
+  latitude: 52.9643
+  longitude: 6.9432
+  elevation: 9
+  unit_system: metric
+  time_zone: Europe/Amsterdam
+  customize: !include customize.yaml
+
+# Hardware ###############################################################
+
+discovery:
+
+zwave:
+ usb_path: /dev/ttyACM0
+
+tradfri:
+  host: 192.168.1.119
+
+hue:
+
+xiaomi_aqara:
+  discovery_retry: 15
+  gateways:
+    - mac: F0B4299A4E22
+      key: jiiox6w7tu8nglyu
+
+# logging ################################################################
+
+logger:
+logbook:
+recorder:
+  purge_keep_days: 7 
+  db_url: !secret my_db
+
+# ui  #####################################################################
+
+http:
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+  cors_allowed_origins:
+    - https://reformedreality.com
+    - http://reformedreality.com
+
+frontend:
+
+config:
+
+# location and time #######################################################
+
+map:
+
+sun:
+
+# cloud ###################################################################
+
+cloud:
+
+tts:
+  - platform: google
+
+# includes ###############################################################
+
+group: !include groups.yaml
+automation: !include_dir_list automations/
+script: !include_dir_list scripts/
+scene: !include_dir_list scenes/
+sensor: !include sensors.yaml
+media_player: !include mediaplayers.yaml
+mqtt: !include mqtt.yaml
+history: !include history.yaml
+device_tracker: !include devicetrackers.yaml
+switch: !include switches.yaml

@@ -1,0 +1,9 @@
+  alias: Buiten verlichting aan 
+  initial_state: True 
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "+00:01:00" 
+  action:
+    - service: scene.turn_on
+      entity_id: scene.buiten_avond_vroeg

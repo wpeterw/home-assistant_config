@@ -1,0 +1,300 @@
+light.lotek_lamp:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f7:8f:47-0b
+light.dressoir:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:3c:87:99-0b
+light.lamp_achter_bank:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f7:94:a6-0b
+light.lantaarn_tuinpad:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:db:6d:a9-0b
+light.eettafel:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:46:54:c1-0b
+light.lantaarn_achter:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:45:22:c4-0b
+light.tuinpad_voor:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:58:f5:f8-0b
+light.bijkeuken:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f6:94:79-0b
+light.garage_zijkant:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:db:61:86-0b
+light.garage_voor:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:58:92:a4-0b
+light.wc_1:
+  name:
+  platform: hue
+  unique_id: 00:0b:57:ff:fe:be:c7:67-01
+light.tuin_links:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:44:d9:23-0b
+light.voordeur:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:40:d2:59-0b
+light.tuin_rechts:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:45:19:0d-0b
+light.lantaarn_oprit_voor:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f6:95:a6-0b
+light.veranda:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:58:9c:4a-0b
+light.achtergevel:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:58:df:b5-0b
+light.lantaarn_oprit:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:58:96:a2-0b
+light.garage_achter:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:59:11:c2-0b
+light.hue_iris:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:c0:4e:04-0b
+light.wasruimte_2:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e4:6b:3a-0b
+light.lantaarn_jacuzzi:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e4:46:e2-0b
+light.wc_2:
+  name:
+  platform: hue
+  unique_id: 00:0b:57:ff:fe:be:22:15-01
+light.slaapkamer_achter:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:30:6d:f4-0b
+light.slaapkamer_jorn_5:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:71:97-0b
+light.slaapkamer_voor:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:30:77:47-0b
+light.hal_overloop:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:30:76:0e-0b
+light.overloop:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:34:aa:cd-0b
+light.lamp_boven_trap:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:36:d2:7f-0b
+light.slaapkamer_jorn_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:70:e6-0b
+light.hal:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:4f:18:24-0b
+light.slaapkamer_juul_voor:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:80:72-0b
+light.slaapkamer_jorn_2:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:88:fc-0b
+light.slaapkamer_jorn_4:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:71:f4:f4-0b
+light.slaapkamer_juul_achter:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:92:3d-0b
+light.slaapkamer_jorn_3:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:71:71-0b
+binary_sensor.fibaro_system_fgms001_motion_sensor_sensor:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076463104
+sensor.fibaro_system_fgms001_motion_sensor_temperature:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076479506
+sensor.fibaro_system_fgms001_motion_sensor_luminance:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076479538
+sensor.fibaro_system_fgms001_motion_sensor_general:
+  name:
+  platform: zwave
+  unique_id: 2-72057594078232577
+switch.greenwave_powernode_1_port_switch:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093060096
+sensor.greenwave_powernode_1_port_energy:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273090
+sensor.greenwave_powernode_1_port_previous_reading:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273106
+sensor.greenwave_powernode_1_port_power:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273218
+sensor.greenwave_powernode_1_port_previous_reading_2:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273234
+light.zwaveme_zme_0643305433_wall_flushmountable_dimmer_level:
+  name:
+  platform: zwave
+  unique_id: 4-72057594109853697
+binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126794752
+sensor.fibaro_system_fgms001_motion_sensor_temperature_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126811154
+sensor.fibaro_system_fgms001_motion_sensor_luminance_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126811186
+sensor.fibaro_system_fgms001_motion_sensor_general_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594128564225
+sensor.illumination_f0b4299a4e22:
+  name:
+  platform: xiaomi_aqara
+  unique_id: illuminationf0b4299a4e22
+sensor.temperature_158d0001109dc6:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001109dc6
+sensor.humidity_158d00010f74bc:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d00010f74bc
+sensor.humidity_158d0001109dc6:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001109dc6
+sensor.temperature_158d00010f74bc:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d00010f74bc
+sensor.illumination_158d0001656eb0:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001656eb0
+light.gateway_light_f0b4299a4e22:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgbf0b4299a4e22
+binary_sensor.door_window_sensor_158d000110d992:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000110d992
+binary_sensor.motion_sensor_158d0001108677:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001108677
+binary_sensor.cube_158d00011a023f:
+  name:
+  platform: xiaomi_aqara
+  unique_id: cube158d00011a023f
+binary_sensor.door_window_sensor_158d0001258205:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001258205
+binary_sensor.door_window_sensor_158d0001070b12:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001070b12
+binary_sensor.door_window_sensor_158d00013ee023:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00013ee023
+binary_sensor.motion_sensor_158d0001656eb0:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001656eb0
+binary_sensor.door_window_sensor_158d0001184e9a:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001184e9a
+binary_sensor.motion_sensor_158d000117325d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000117325d
+binary_sensor.door_window_sensor_158d0001142609:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001142609
+binary_sensor.motion_sensor_158d00010e4e6d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00010e4e6d
+binary_sensor.door_window_sensor_158d000105cba2:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000105cba2
+binary_sensor.door_window_sensor_158d00013fdece:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00013fdece
+binary_sensor.door_window_sensor_158d00012d76bf:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00012d76bf
+media_player.kdl55w809c:
+  name:
+  platform: cast
+  unique_id: 346faa1d-190b-fa86-400d-37742d18b476
+media_player.tv:
+  name:
+  platform: sonos
+  unique_id: RINCON_B8E9377430F401400
+media_player.living_room:
+  name:
+  platform: sonos
+  unique_id: RINCON_B8E93786BD0001400
+media_player.kitchen:
+  name:
+  platform: sonos
+  unique_id: RINCON_B8E937837E2201400

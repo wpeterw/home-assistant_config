@@ -1,0 +1,10 @@
+  alias: Hue dimmer woonkamer aan
+  trigger:
+    - platform: state
+      entity_id: group.woonkamer
+      to: 'on'
+  action:
+    service: switch.turn_on
+    entity_id:
+      - switch.hanglamp_voor
+      - switch.hanglamp_achter

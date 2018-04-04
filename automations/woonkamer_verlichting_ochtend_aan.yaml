@@ -1,0 +1,24 @@
+  alias: Woonkamer verlichting aan ochtend
+  initial_state: True
+  trigger:
+    platform: state
+    entity_id: binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2
+    to: 'on'
+  condition:
+    condition: and
+    conditions:
+      - condition: numeric_state
+        entity_id: sensor.fibaro_system_fgms001_motion_sensor_luminance_2
+        below: 100
+      - condition: and
+        conditions:
+          - condition: time
+            after: '07:00:00'
+            before: '08:00:00'
+          - condition: numeric_state
+            entity_id: sun.sun
+            value_template: '{{ state.attributes.elevation }}'
+            below: 3.5
+  action:
+    - service: scene.turn_on
+      entity_id: scene.woonkamer_normaal

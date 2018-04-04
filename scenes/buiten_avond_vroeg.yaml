@@ -1,0 +1,60 @@
+  - name: Buiten avond vroeg
+    entities:
+        light.garage_achter:
+            state: on
+            transition: 2
+            brightness: 180
+        light.garage_zijkant:
+            state: on
+            transition: 2
+            brightness: 180
+        light.garage_voor:
+            transition: 2
+            brightness: 180
+        light.lantaarn_oprit:
+            state: on
+            transition: 2
+            brightness: 180
+        light.lantaarn_oprit_voor:
+            state: on
+            transition: 2
+            brightness: 180
+        light.lantaarn_tuinpad:
+            state: on
+            transition: 2
+            brightness: 180
+        light.tuinpad_voor:
+            state: on
+            transition: 2
+            brightness: 180
+        light.voordeur:
+            state: on
+            transition: 2
+            brightness: 180
+        light.achtergevel:
+            state: on
+            transition: 2
+            brightness: 180
+        light.lantaarn_jacuzzi:
+            state: on
+            transition: 2
+            brightness: 180
+        light.zwaveme_zme_0643305433_wall_flushmountable_dimmer_level:
+            state: on
+            brightness: 120
+        light.veranda:
+            state: on
+            transition: 2
+            brightness: 180
+        light.tuin_links:
+            state: on
+            transition: 2
+            brightness: 180
+        light.lantaarn_achter:
+            state: on
+            transition: 2
+            brightness: 180
+        light.tuin_rechts:
+            state: on
+            transition: 2
+            brightness: 180

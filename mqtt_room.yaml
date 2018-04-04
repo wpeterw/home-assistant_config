@@ -1,0 +1,25 @@
+  - platform: mqtt_room
+    device_id: fb564ff0af5f
+    name: 'Mercedes'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 30
+  - platform: mqtt_room
+    device_id: cc6458a8b1da
+    name: 'Juul'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 30  
+  - platform: mqtt_room  
+    device_id: d402fae919f7
+    name: 'Jorn'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 30
+  - platform: mqtt_room
+    device_id: dd7eeaa9f962
+    name: 'Volkswagen'
+    state_topic: 'happy-bubbles/presence/ha'
+    timeout: 5
+    away_timeout: 300
+

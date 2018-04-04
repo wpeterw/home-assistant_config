@@ -1,0 +1,61 @@
+  - name: Buiten avond laat
+    entities:
+        light.garage_achter:
+            state: on
+            transition: 2
+            brightness: 50
+        light.garage_zijkant:
+            state: on
+            transition: 2
+            brightness: 50
+        light.garage_voor:
+            state: on
+            transition: 2
+            brightness: 50
+        light.lantaarn_oprit:
+            state: on
+            transition: 2
+            brightness: 50
+        light.lantaarn_oprit_voor:
+            state: on
+            transition: 2
+            brightness: 50
+        light.lantaarn_tuinpad:
+            state: on
+            transition: 2
+            brightness: 50
+        light.tuinpad_voor:
+            state: on
+            transition: 2
+            brightness: 50
+        light.voordeur:
+            state: on
+            transition: 2
+            brightness: 50
+        light.achtergevel:
+            state: on
+            transition: 2
+            brightness: 20
+        light.lantaarn_jacuzzi:
+            state: on
+            transition: 2
+            brightness: 30
+        light.zwaveme_zme_0643505433_wall_flushmountable_dimmer_level_4_0:
+            state: on
+            brightness: 90
+        light.veranda:
+            state: on
+            transition: 2
+            brightness: 50
+        light.tuin_links:
+            state: on
+            transition: 2
+            brightness: 50
+        light.lantaarn_achter:
+            state: on
+            transition: 2
+            brightness: 50
+        light.tuin_rechts:
+            state: on
+            transition: 2
+            brightness: 50

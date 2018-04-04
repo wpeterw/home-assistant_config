@@ -1,0 +1,12 @@
+  alias: Verlichting woonkamer ochtend uit
+  initial_state: True
+  trigger:
+    platform: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    above: 3.5
+  action:
+    service: light.turn_off
+    entity_id: group.buiten
+    data:
+      transition: 2

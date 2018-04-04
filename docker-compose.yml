@@ -1,0 +1,21 @@
+  version: '3'
+  services:
+   home-assistant:
+    image: homeassistant/home-assistant
+    container_name: home-assistant
+    network_mode: "host"
+    volumes:
+      - /home/peter/home-assistant:/config  
+      - /home/peter/home-assistant/custom_components:/config/custom_components
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    labels:
+       traefik.enable: "true"
+       traefik.frontend.rule: "Host:ha.wieringa.pw"
+       traefik.port: "8123"
+       com.centurylinklabs.watchtower.enable: "true"
+    ports:
+       - "8123:8123"
+       - "1883:1883"
+    restart: unless-stopped

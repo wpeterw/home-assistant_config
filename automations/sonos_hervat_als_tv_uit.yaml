@@ -1,0 +1,13 @@
+  alias : Restart Sonos when TV off
+  initial_state: True
+  trigger:
+    platform: state
+    entity_id: media_player.sony_bravia_tv
+    to: 'off'
+  condition:
+    condition: time
+    before: '23:30:00'
+  action:
+    - service: media_player.media_play
+      data:
+        entity_id: media_player.kitchen
