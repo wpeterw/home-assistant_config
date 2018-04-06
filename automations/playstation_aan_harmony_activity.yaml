@@ -1,0 +1,10 @@
+alias: Playstation aan als harmony activity is Playstation
+trigger:
+  - platform: state
+    entity_id: remote.harmony_hub
+condition:
+  condition: template
+  value_template: '{{ trigger.to_state.attributes.current_activity == "Playstation" }}'
+action:
+  - service: media_player.turn_on
+    entity_id: media_player.playstation_4

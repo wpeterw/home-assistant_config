@@ -298,3 +298,7 @@ media_player.kitchen:
   name:
   platform: sonos
   unique_id: RINCON_B8E937837E2201400
+media_player.slaapkamer:
+  name:
+  platform: cast
+  unique_id: 9422e7a1-a771-08e4-7f4d-46e1b91bdc27

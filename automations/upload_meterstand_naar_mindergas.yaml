@@ -1,0 +1,9 @@
+  alias: 'upload meterstand naar mindergas.nl'
+  trigger:
+    - platform: time
+      hours: 0
+      minutes: 10
+      seconds: 00
+  action:
+      service: rest_command.post_meterstanden
+  

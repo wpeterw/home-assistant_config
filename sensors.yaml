@@ -1,4 +1,3 @@
-
   - platform: haveibeenpwned
     email: 
       - !secret email1
@@ -248,9 +247,7 @@
         friendly_name: 'Beweging woonkamer'
         icon_template: mdi:eye
         value_template: '{% if states.binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2.state == "on"%} Beweging {%- else -%} Geen {%- endif -%}'
-      playstation:
-        friendly_name: Playstation 4
-        icon_template: mdi:google-controller
-        value_template: "{% if is_state('device_tracker.playstation_4', 'home') %}on{% else %}off{% endif %}"
+      yesterday:
+        friendly_name: "yesterday"
+        value_template: "{{ (as_timestamp(now()) - (24*3600)) | timestamp_custom('%Y-%m-%d', True) }}"
         
-

@@ -1,0 +1,7 @@
+  post_meterstanden:
+    method: POST
+    url: 'https://www.mindergas.nl/api/gas_meter_readings'
+    headers:
+      content-type: application/json
+      AUTH-TOKEN: !secret token
+    payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state }}}'
