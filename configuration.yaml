@@ -1,7 +1,7 @@
 homeassistant:
   name: Home
-  latitude: 52.9643
-  longitude: 6.9432
+  latitude: !secret latitude
+  longitude: !secret longitude
   elevation: 9
   unit_system: metric
   time_zone: Europe/Amsterdam
@@ -72,7 +72,6 @@ mqtt: !include mqtt.yaml
 history: !include history.yaml
 device_tracker: !include devicetrackers.yaml
 switch: !include switches.yaml
-rest_command: !include_dir_list rest/
 
 # rest ###################################################################
 rest_command:
