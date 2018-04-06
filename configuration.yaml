@@ -22,8 +22,8 @@ hue:
 xiaomi_aqara:
   discovery_retry: 15
   gateways:
-    - mac: F0B4299A4E22
-      key: jiiox6w7tu8nglyu
+    - mac: !secret xiaomi_mac
+      key: !secret xiaomi_key
 
 # logging ################################################################
 
