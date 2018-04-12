@@ -249,8 +249,6 @@
     name: Energie meters
     entities:
       - sensor.power_consumption
-      - sensor.power_consumption_normal
-      - sensor.power_consumption_low
       - sensor.meterstandstroomtotaal
       - sensor.gas_consumption
       - sensor.hourly_gas_consumption
@@ -344,18 +342,19 @@
   devices:
     name: Devices
     entities:
-      - device_tracker.hue_benedentomatolocal
-      - device_tracker.hue_boventomatolocal
-      - device_tracker.tradfri_hubtomatolocal
-      - device_tracker.lumigatewayv3_miio44685363tomatolocal
-      - device_tracker.harmony_hubtomatolocal
-      - device_tracker.amazon12505eab4tomatolocal
-      - device_tracker.slimmemetertomatolocal
-      - device_tracker.eneco001061879tomatolocal
-      - device_tracker.piholetomatolocal
-      - device_tracker.diskstationtomatolocal
-      - device_tracker.sony_braviatomatolocal
-      - device_tracker.upcgw_4600tomatolocal
+      - sensor.hue_hub_beneden
+      - sensor.hue_hub_boven
+      - sensor.tradfri_huib
+      - sensor.xiaomi_hub
+      - sensor.harmony_hub
+      - sensor.amazon_alexa
+      - sensor.slimme_meter
+      - sensor.toon_thermostaat
+      - sensor.pihole_dns
+      - sensor.synology_diskstation
+      - sensor.sony_bravia
+      - sensor.ziggo_horizon
+      - sensor.camera_veranda
  
   batterylevels:
    name: Batterij status

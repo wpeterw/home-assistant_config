@@ -21,14 +21,12 @@
       friendly_name: Barometer
     sensor.power_consumption:
       friendly_name: Actueel stroomverbruik
-    sensor.power_consumption_normal:
-      friendly_name: Meterstand stroom normaal
     sensor.power_consumption_low:
-      friendly_name: Meterstand stroom laag
+      friendly_name: Meterstand stroom
     sensor.gas_consumption:
       friendly_name: Meterstand gas
     sensor.hourly_gas_consumption:
-      friendly_name: Gasverbruik afgelopen uur
+      friendly_name: Actueel gasverbruik
     media_player.sony_bravia_tv:
       friendly_name: TV
     media_player.tv:
