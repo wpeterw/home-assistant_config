@@ -252,7 +252,6 @@
       - sensor.meterstandstroomtotaal
       - sensor.gas_consumption
       - sensor.hourly_gas_consumption
-      - sensor.greenwave_powernode_1_port_previous_reading
   automationgroup:
     name: Automation
     entities:
@@ -344,7 +343,7 @@
     entities:
       - sensor.hue_hub_beneden
       - sensor.hue_hub_boven
-      - sensor.tradfri_huib
+      - sensor.tradfri_hub
       - sensor.xiaomi_hub
       - sensor.harmony_hub
       - sensor.amazon_alexa
@@ -355,6 +354,7 @@
       - sensor.sony_bravia
       - sensor.ziggo_horizon
       - sensor.camera_veranda
+      - sensor.camera_hal
  
   batterylevels:
    name: Batterij status

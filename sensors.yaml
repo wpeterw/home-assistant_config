@@ -4,7 +4,7 @@
       - !secret email2
 
   - platform: darksky
-    api_key: 24eb76794723bc0c7e7033756af87d2e
+    api_key: !secret darksky_api
     language: nl
     monitored_conditions:
       - icon
@@ -137,18 +137,18 @@
     unit_of_measurement: "kWh"
   - platform: mqtt
     name: "Verbruik koelkast en vriezer actueel"
-    state_topic: "tele/koelkast_vriezer/ENERGY"
-    value_template: "{{ value_json.Power }}"
+    state_topic: "tele/koelkast_vriezer/SENSOR"
+    value_template: "{{ value_json['ENERGY'].Power}}"
     unit_of_measurement: "W"
   - platform: mqtt
     name: "Verbruik koelkast en vriezer vandaag"
-    state_topic: "tele/koelkast_vriezer/ENERGY"
-    value_template: "{{ value_json.Today }}"
+    state_topic: "tele/koelkast_vriezer/SENSOR"
+    value_template: "{{ value_json['ENERGY'].Today}}"
     unit_of_measurement: "kWh"
   - platform: mqtt
     name: "Verbruik koelkast en vriezer gisteren"
-    state_topic: "tele/koelkast_vriezer/ENERGY"
-    value_template: "{{ value_json.Yesterday }}"
+    state_topic: "tele/koelkast_vriezer/SENSOR"
+    value_template: "{{ value_json['ENERGY'].Yesterday}}"
     unit_of_measurement: "kWh"
 
   - platform: systemmonitor
@@ -253,6 +253,10 @@
         friendly_name: 'Camera veranda'
         icon_template: mdi:cctv
         value_template: "{% if is_state('device_tracker.aca213681cfa', 'home') %}online{% else %}offline{% endif %}"
+      camera_hal:
+        friendly_name: 'Camera hal'
+        icon_template: mdi:cctv
+        value_template: "{% if is_state('device_tracker.34ce00d38570', 'home') %}online{% else %}offline{% endif %}"   
       ziggo_horizon:
         friendly_name: 'Ziggo Horizon'
         icon_template: mdi:television-box

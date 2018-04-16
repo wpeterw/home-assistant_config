@@ -302,3 +302,51 @@ media_player.slaapkamer:
   name:
   platform: cast
   unique_id: 9422e7a1-a771-08e4-7f4d-46e1b91bdc27
+light.tradfri_bulb_gu10_w_400lm:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65545
+light.badkamer_2:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65538
+light.badkamer_6:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65542
+light.badkamer_1:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65537
+light.badkamer_7:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65543
+light.badkamer_3:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65539
+light.badkamer_5:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65541
+light.tradfri_bulb_gu10_w_400lm_2:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65546
+light.badkamer_4:
+  name:
+  platform: tradfri
+  unique_id: light-7e11555204400154-65540
+light.tradfri_group:
+  name:
+  platform: tradfri
+  unique_id: group-7e11555204400154-162181
+light.tradfri_group_2:
+  name:
+  platform: tradfri
+  unique_id: group-7e11555204400154-162182
+media_player.huiskamer:
+  name:
+  platform: cast
+  unique_id: 43223d0d-95cc-3db8-850f-29cc685c811e

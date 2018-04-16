@@ -27,7 +27,6 @@ xiaomi_aqara:
 
 # logging ################################################################
 
-logger:
 logbook:
 recorder:
   purge_keep_days: 7 
@@ -42,6 +41,13 @@ http:
   cors_allowed_origins:
     - https://reformedreality.com
     - http://reformedreality.com
+
+#Node-Red iframe
+panel_iframe:
+ nodered:
+   title: 'Node-Red'
+   icon: 'mdi:shuffle-variant'
+   url: 'http://192.168.1.26:1880/'
 
 frontend:
 
@@ -67,6 +73,7 @@ automation: !include_dir_list automations/
 script: !include_dir_list scripts/
 scene: !include_dir_list scenes/
 sensor: !include sensors.yaml
+logger: !include logger.yaml
 media_player: !include mediaplayers.yaml
 mqtt: !include mqtt.yaml
 history: !include history.yaml
@@ -74,6 +81,7 @@ device_tracker: !include devicetrackers.yaml
 switch: !include switches.yaml
 
 # rest ###################################################################
+# Geccorrigeerde stand ivm metervervanging. Stand oude meter: 3746
 rest_command:
   post_meterstanden:
     method: POST
@@ -81,7 +89,7 @@ rest_command:
     headers:
       content-type: application/json
       AUTH-TOKEN: !secret token
-    payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state }}}'
+    payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746 }}}'
 
 # cameras ###############################################################
 # shinobi:
