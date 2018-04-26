@@ -25,7 +25,12 @@ ip_bans.yaml
 docker-compose.yml
 custom-components/
 custom_components/media_player/__pycache__/
-.*
+.hue*
+.tradfri*
+.ps4*
+.HA*
+.uuid
+.config*
 !/.gitignore
 config
 ozw_config
