@@ -1,149 +1,151 @@
-    light.zwaveme_zme_0643305433_wall_flushmountable_dimmer_level:
-      friendly_name: Spots Veranda
-      brightness: 50
-    switch.greenwave_powernode_1_port_switch_3_0:
-      friendly_name: Zwave stekker koelkast/vriezer
-    sensor.dark_sky_precip_probability:
-      friendly_name: Kans op neerslag
-    sensor.dark_sky_hourly_summary:
-      friendly_name: Vandaag
-    sensor.dark_sky_daily_summary:
-      friendly_name: Komende week
-    sensor.dark_sky_temperature:
-      friendly_name: Temperatuur
-    sensor.dark_sky_daily_high_temperature:
-      friendly_name: Max. temperatuur
-    sensor.dark_sky_daily_low_temperature:
-      friendly_name: Min. temperatuur
-    sensor.dark_sky_humidity:
-      friendly_name: Luchtvochtigheid
-    sensor.dark_sky_pressure:
-      friendly_name: Barometer
-    sensor.power_consumption:
-      friendly_name: Actueel stroomverbruik
-    sensor.power_consumption_low:
-      friendly_name: Meterstand stroom
-    sensor.gas_consumption:
-      friendly_name: Meterstand gas
-    sensor.hourly_gas_consumption:
-      friendly_name: Actueel gasverbruik
-    media_player.sony_bravia_tv:
-      friendly_name: TV
-    media_player.tv:
-      friendly_name: Sonos playbar
-    media_player.kdl55w809c:
-      friendly_name: Google cast woonkamer
-    sensor.kelder_humidity:
-      friendly_name: Luchtvochtigheid kelder
-    sensor.veranda_humidity:
-      friendly_name: Luchtvochtigheid veranda
-    sensor.kelder_temperature:
-      friendly_name: Temperatuur kelder
-    camera.escam_veranda:
-      friendly_name: Camera veranda
-    sensor.reistijd_kasia_ochtend:
-      friendly_name: Reistijd Kasia ochtend
-      icon: mdi:car
-    sensor.reistijd_peter_ochtend:
-      friendly_name: Reistijd Peter ochtend
-      icon: mdi:car
-    sensor.reistijd_kasia_avond:
-      friendly_name: Reistijd Kasia avond
-      icon: mdi:car
-    sensor.reistijd_peter_avond:
-      friendly_name: Reistijd Peter avond
-      icon: mdi:car
-    binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2:
-      friendly_name: Beweging woonkamer
-      icon: mdi:eye
-    sensor.fibaro_system_fgms001_motion_sensor_general_2_battery:
-      friendly_name: Fibaro sensor woonkamer
-      icon: mdi:battery
-    sensor.fibaro_system_fgms001_motion_sensor_temperature_2:
-      friendly_name: Temperatuur woonkamer
-    sensor.fibaro_system_fgms001_motion_sensor_luminance_2:
-      friendly_name: Lux woonkamer
-    binary_sensor.fibaro_system_fgms001_motion_sensor_sensor:
-      friendly_name: Beweging keuken
-      icon: mdi:eye
-    binary_sensor.motion_sensor_158d00010e4e6d:
-      friendly_name: Beweging veranda
-      icon: mdi:eye
-    binary_sensor.motion_sensor_158d0001656eb0:
-      friendly_name: Beweging badkamer
-      icon: mdi:eye
-    sensor.beweging_bijkeuken:
-      friendly_name: Beweging bijkeuken
-      icon: mdi:eye
-    binary_sensor.motion_sensor_158d000117325d:
-      friendly_name: Beweging hal
-      icon: mdi:eye
-    binary_sensor.motion_sensor_158d0001108677:
-      friendly_name: Beweging slaapkamer 
-      icon: mdi:eye
-    sensor.fibaro_system_fgms001_motion_sensor_general_2_0_battery:
-      friendly_name: Fibaro sensor keuken
-      icon: mdi:battery
-    sensor.fibaro_system_fgms001_motion_sensor_temperature:
-      friendly_name: Temperatuur keuken
-    sensor.fibaro_system_fgms001_motion_sensor_luminance:
-      friendly_name: Lux keuken
-    sensor.greenwave_powernode_1_port_previous_reading:
-      friendly_name: Verbruik koelkast en vriezer
-    sensor.temperature_158d00010f74bc:
-      friendly_name: Temperatuur kelder
-    sensor.humidity_158d00010f74bc:
-      friendly_name: Luchtvochtigheid kelder  
-    sensor.humidity_158d0001109dc6:
-      friendly_name: Luchtvochtigheid slaapkamer
-    sensor.temperature_158d0001109dc6:
-      friendly_name: Temperatuur slaapkamer
-    switch.sonoff_lamp1:
-      friendly_name: Hanglamp achter
-    switch.sonoff_lamp2:
-      friendly_name: Hanglamp voor
-    light.hue_iris:
-      brightness: 180
-      transition: 2
-    light.lamp_achter_bank:
-      brightness: 180
-      transition: 2
-    light.lotek_lamp:
-      brightness: 180
-      transition: 2
-    light.dressoir:
-      brightness: 180
-      transition: 2
-    light.hue_color_lamp_1:
-      friendly_name: Eettafel
-      brightness: 180
-      transition: 2
-    light.tradfri_group_2:
-      friendly_name: WC
-    device_tracker.amazon12505eab4tomatolocal:
-      friendly_name: Amazon Alexa
-    device_tracker.deco_m5tomatolocal:
-      friendly_name: Deco wifi mesh
-    device_tracker.diskstationtomatolocal:
-      friendly_name: Synology diskstation
-    device_tracker.harmony_hubtomatolocal:
-      friendly_name: Harmony hub
-    device_tracker.hue_boventomatolocal:
-      friendly_name: Hue bridge boven
-    device_tracker.hue_benedentomatolocal:
-      friendly_name: Hue bridge beneden
-    device_tracker.piholetomatolocal:
-      friendly_name: Pihole DNS
-    device_tracker.slimmemetertomatolocal:
-      friendly_name: Slimmemeter
-    device_tracker.eneco001061879tomatolocal:
-      friendly_name: Toon thermostaat
-    device_tracker.lumigatewayv3_miio44685363tomatolocal:
-      friendly_name: Xiaomi hub
-      icon: mdi-home-automation
-    device_tracker.upcgw_4600tomatolocal:
-      friendly_name: Ziggo Horizon box
-    device_tracker.xiaomi_hub:
-      friendly_name: Xiaomi hub
-    device_tracker.c863f152ce8c:
-      friendly_name: Playstation 4
+light.zwaveme_zme_0643305433_wall_flushmountable_dimmer_level:
+  friendly_name: Spots Veranda
+  brightness: 50
+switch.greenwave_powernode_1_port_switch_3_0:
+  friendly_name: Zwave stekker koelkast/vriezer
+sensor.dark_sky_precip_probability:
+  friendly_name: Kans op neerslag
+sensor.dark_sky_hourly_summary:
+  friendly_name: Vandaag
+sensor.dark_sky_daily_summary:
+  friendly_name: Komende week
+sensor.dark_sky_temperature:
+  friendly_name: Temperatuur
+sensor.dark_sky_daily_high_temperature:
+  friendly_name: Max. temperatuur
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Min. temperatuur
+sensor.dark_sky_humidity:
+  friendly_name: Luchtvochtigheid
+sensor.dark_sky_pressure:
+  friendly_name: Barometer
+sensor.power_consumption:
+  friendly_name: Actueel stroomverbruik
+sensor.power_consumption_low:
+  friendly_name: Meterstand stroom
+sensor.gas_consumption:
+  friendly_name: Meterstand gas
+sensor.hourly_gas_consumption:
+  friendly_name: Actueel gasverbruik
+media_player.sony_bravia_tv:
+  friendly_name: TV
+media_player.tv:
+  friendly_name: Sonos playbar
+media_player.kdl55w809c:
+  friendly_name: Google cast woonkamer
+sensor.kelder_humidity:
+  friendly_name: Luchtvochtigheid kelder
+sensor.veranda_humidity:
+  friendly_name: Luchtvochtigheid veranda
+sensor.kelder_temperature:
+  friendly_name: Temperatuur kelder
+camera.escam_veranda:
+  friendly_name: Camera veranda
+sensor.reistijd_kasia_ochtend:
+  friendly_name: Reistijd Kasia ochtend
+  icon: mdi:car
+sensor.reistijd_peter_ochtend:
+  friendly_name: Reistijd Peter ochtend
+  icon: mdi:car
+sensor.reistijd_kasia_avond:
+  friendly_name: Reistijd Kasia avond
+  icon: mdi:car
+sensor.reistijd_peter_avond:
+  friendly_name: Reistijd Peter avond
+  icon: mdi:car
+binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2:
+  friendly_name: Beweging woonkamer
+  icon: mdi:eye
+sensor.fibaro_system_fgms001_motion_sensor_general_2_battery:
+  friendly_name: Fibaro sensor woonkamer
+  icon: mdi:battery
+sensor.fibaro_system_fgms001_motion_sensor_temperature_2:
+  friendly_name: Temperatuur woonkamer
+sensor.fibaro_system_fgms001_motion_sensor_luminance_2:
+  friendly_name: Lux woonkamer
+binary_sensor.fibaro_system_fgms001_motion_sensor_sensor:
+  friendly_name: Beweging keuken
+  icon: mdi:eye
+binary_sensor.motion_sensor_158d00010e4e6d:
+  friendly_name: Beweging veranda
+  icon: mdi:eye
+binary_sensor.motion_sensor_158d0001656eb0:
+  friendly_name: Beweging badkamer
+  icon: mdi:eye
+sensor.beweging_bijkeuken:
+  friendly_name: Beweging bijkeuken
+  icon: mdi:eye
+binary_sensor.motion_sensor_158d000117325d:
+  friendly_name: Beweging hal
+  icon: mdi:eye
+binary_sensor.motion_sensor_158d0001108677:
+  friendly_name: Beweging slaapkamer
+  icon: mdi:eye
+sensor.fibaro_system_fgms001_motion_sensor_general_2_0_battery:
+  friendly_name: Fibaro sensor keuken
+  icon: mdi:battery
+sensor.fibaro_system_fgms001_motion_sensor_temperature:
+  friendly_name: Temperatuur keuken
+sensor.fibaro_system_fgms001_motion_sensor_luminance:
+  friendly_name: Lux keuken
+sensor.greenwave_powernode_1_port_previous_reading:
+  friendly_name: Verbruik koelkast en vriezer
+sensor.temperature_158d00010f74bc:
+  friendly_name: Temperatuur kelder
+sensor.humidity_158d00010f74bc:
+  friendly_name: Luchtvochtigheid kelder
+sensor.humidity_158d0001109dc6:
+  friendly_name: Luchtvochtigheid slaapkamer
+sensor.temperature_158d0001109dc6:
+  friendly_name: Temperatuur slaapkamer
+switch.sonoff_lamp1:
+  friendly_name: Hanglamp achter
+switch.sonoff_lamp2:
+  friendly_name: Hanglamp voor
+light.hue_iris:
+  brightness: 180
+  transition: 2
+light.lamp_achter_bank:
+  brightness: 180
+  transition: 2
+light.lotek_lamp:
+  brightness: 180
+  transition: 2
+light.dressoir:
+  brightness: 180
+  transition: 2
+light.hue_color_lamp_1:
+  friendly_name: Eettafel
+  brightness: 180
+  transition: 2
+light.tradfri_group_2:
+  friendly_name: WC
+device_tracker.amazon12505eab4tomatolocal:
+  friendly_name: Amazon Alexa
+device_tracker.deco_m5tomatolocal:
+  friendly_name: Deco wifi mesh
+device_tracker.diskstationtomatolocal:
+  friendly_name: Synology diskstation
+device_tracker.harmony_hubtomatolocal:
+  friendly_name: Harmony hub
+device_tracker.hue_boventomatolocal:
+  friendly_name: Hue bridge boven
+device_tracker.hue_benedentomatolocal:
+  friendly_name: Hue bridge beneden
+device_tracker.piholetomatolocal:
+  friendly_name: Pihole DNS
+device_tracker.slimmemetertomatolocal:
+  friendly_name: Slimmemeter
+device_tracker.eneco001061879tomatolocal:
+  friendly_name: Toon thermostaat
+device_tracker.lumigatewayv3_miio44685363tomatolocal:
+  friendly_name: Xiaomi hub
+  icon: mdi-home-automation
+device_tracker.upcgw_4600tomatolocal:
+  friendly_name: Ziggo Horizon box
+device_tracker.xiaomi_hub:
+  friendly_name: Xiaomi hub
+device_tracker.c863f152ce8c:
+  friendly_name: Playstation 4
+binary_sensor.cube_158d00011a023f:
+  friendly_name: Xiaomi magic cube

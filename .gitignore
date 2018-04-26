@@ -11,6 +11,7 @@
 *.html
 *.pyc
 OZW_Log.txt
+entity_registry.yaml
 home-assistant.log
 home-assistant_v2.db
 *.db-journal

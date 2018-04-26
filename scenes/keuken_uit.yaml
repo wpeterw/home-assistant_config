@@ -1,0 +1,22 @@
+  - name: Keuken uit
+    entities:
+        light.dimmable_light_1:
+            state: off
+            transition: 3
+        light.dimmable_light_1_2:
+            state: off
+            transition: 3
+        light.dimmable_light_1_3:
+            state: off
+            transition: 3
+        light.dimmable_light_1_4:
+            state: off
+            transition: 3
+        light.dimmable_light_1_5:
+            state: off
+            transition: 3
+        light.dimmable_light_1_6:
+            state: off
+            transition: 3
+            brightness: 100
+

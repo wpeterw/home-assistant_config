@@ -1,0 +1,24 @@
+'1524733010873':
+  alias: Notify when Hue beneden is offline
+  sequence:
+  - condition: state
+    entity_id: device_tracker.hue_benedentomatolocal
+    state: offline
+  - data:
+      data: Hue beneden is offline
+    service: persistent_notification.create
+'1524733010910':
+  alias: Notify when Hue beneden is offline
+  sequence:
+  - condition: state
+    entity_id: device_tracker.hue_benedentomatolocal
+    state: offline
+  - data:
+      data: Hue beneden is offline
+    service: persistent_notification.create
+'1524733085601':
+  alias: Notify wen Hue beneden is offline
+  sequence:
+  - condition: state
+    entity_id: device_tracker.hue_benedentomatolocal
+    state: offline

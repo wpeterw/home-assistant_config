@@ -24,12 +24,12 @@ xiaomi_aqara:
   gateways:
     - mac: !secret xiaomi_mac
       key: !secret xiaomi_key
-
+  
 # logging ################################################################
 
 logbook:
 recorder:
-  purge_keep_days: 7 
+  purge_keep_days: 100
   db_url: !secret my_db
 
 # ui  #####################################################################
@@ -62,9 +62,16 @@ sun:
 # cloud ###################################################################
 
 cloud:
-
-tts:
-  - platform: google
+  google_actions:
+    filter:
+      include_entities:
+        - group.wc
+        - group.woonkamer
+    entity_config:
+      group.wc:
+        name: Toilet
+      group.woonkamer:
+        name: Living room          
 
 # includes ###############################################################
 
@@ -90,3 +97,4 @@ rest_command:
       content-type: application/json
       AUTH-TOKEN: !secret token
     payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746 }}}'
+

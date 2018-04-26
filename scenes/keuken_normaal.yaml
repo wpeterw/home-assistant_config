@@ -1,0 +1,27 @@
+  - name: Keuken normaal
+    entities:
+        light.dimmable_light_1:
+            state: on
+            transition: 3
+            brightness: 100
+        light.dimmable_light_1_2:
+            state: on
+            transition: 3
+            brightness: 100
+        light.dimmable_light_1_3:
+            state: on
+            transition: 3
+            brightness: 100
+        light.dimmable_light_1_4:
+            state: on
+            transition: 3
+            brightness: 100
+        light.dimmable_light_1_5:
+            state: on
+            transition: 3
+            brightness: 100
+        light.dimmable_light_1_6:
+            state: on
+            transition: 3
+            brightness: 100
+

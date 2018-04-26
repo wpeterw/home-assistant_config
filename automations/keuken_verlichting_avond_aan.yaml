@@ -6,4 +6,4 @@
     offset: "-00:30:00"
   action:
     service: scene.turn_on
-    entity_id: scene.woonkamer_normaal
+    entity_id: scene.keuken_normaal

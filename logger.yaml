@@ -17,9 +17,10 @@ logs:
   homeassistant.components.http: warn
   homeassistant.components.media_player: warn
   homeassistant.components.sensor.pi_hole: critical
-  homeassistant.components.recorder: error
+  homeassistant.components.recorder: debug
   homeassistant.components.sensor.darksky: warn
   homeassistant.components.zwave: warn
+  homeassistant.components.darksky: debug
   homeassistant.exceptions: info
   py.warnings: error
   root: warn

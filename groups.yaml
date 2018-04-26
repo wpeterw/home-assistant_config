@@ -5,6 +5,7 @@
       - group.woonkamer
       - group.hal
       - group.keuken
+      - group.keuken_aanrecht
       - group.bijkeuken
       - group.wc
       - group.boven
@@ -17,11 +18,15 @@
       - group.battery_levels
   woonkamer_view:
     view: yes
-    name: Beneden
+    name: Woonkamer
     entities:
       - group.woonkamer
+      - group.woonkamer_sensors
+  beneden_view:
+    view: yes
+    name: Beneden
+    entities:
       - group.hal
-      - group.keuken
       - group.kelder
       - group.bijkeuken
   keuken_view:
@@ -29,11 +34,8 @@
     name: keuken
     entities:
       - group.keuken
-  kelder_view:
-    view: yes
-    name: Kelder
-    entities:
-      - group.kelder
+      - group.keuken_aanrecht
+      - group.keuken_sensors
   boven_view:
     view: yes
     name: Boven
@@ -110,9 +112,11 @@
       - light.hue_iris
       - switch.hanglamp_voor
       - switch.hanglamp_achter
+  woonkamer_sensors:    
+    name: Woonkamer sensors
+    entities:
       - sensor.fibaro_system_fgms001_motion_sensor_temperature_2
       - sensor.fibaro_system_fgms001_motion_sensor_luminance_2
-      - camera.woonkamer
   hanglampen:
     name: Hanglampen
     entities:
@@ -187,6 +191,18 @@
   keuken:
     name: Keuken
     entities:
+      - light.dimmable_light_1_4
+      - light.dimmable_light_1_5
+      - light.dimmable_light_1_6
+  keuken_aanrecht:
+    name: Keuken aanrecht
+    entities:
+      - light.dimmable_light_1
+      - light.dimmable_light_1_2
+      - light.dimmable_light_1_3
+  keuken_sensors:
+    name: Keuken sensors
+    entities:
       - sensor.fibaro_system_fgms001_motion_sensor_temperature
       - sensor.fibaro_system_fgms001_motion_sensor_luminance
   bijkeuken:
@@ -209,7 +225,8 @@
   wc:
     name: wc
     entities:
-      - light.tradfri_group_2
+      - light.dimmable_light_1_7
+      - light.dimmable_light_1_8
   media:
     name: Media
     entities:
@@ -221,7 +238,7 @@
       - media_player.sony_bravia_tv
       - media_player.kdl55w809c
       - media_player.spotify
-  Sensoren:
+  sensoren:
     name: Sensoren
     entities:
       - sensor.beweging_woonkamer
@@ -272,6 +289,8 @@
       - scene.woonkamer_gedimd
       - scene.woonkamer_normaal
       - scene.woonkamer_ochtend
+      - scene.keuken_normaal
+      - scene.keuken_uit
   google_calendar:
     name: Calendar
     entities:
@@ -294,16 +313,11 @@
   ups:
     name: APC CS650
     entities:
-      - sensor.ups_battery
-      - sensor.ups_input_voltage
-      - sensor.ups_load
-      - sensor.ups_nominal_input_voltage
-      - sensor.ups_nominal_output_power
-      - sensor.ups_output_voltage
-      - sensor.ups_status
-      - sensor.ups_time_left
-      - sensor.ups_time_on_battery
-      - sensor.ups_transfer_count 
+      - sensor.apc_ups_status_data
+      - sensor.apc_ups_input_voltage
+      - sensor.apc_ups_load
+      - sensor.apc_ups_input_voltage
+      - sensor.apc_ups_battery_runtime
   systemmonitor:
     name: System monitor
     entities:
@@ -347,6 +361,7 @@
       - sensor.xiaomi_hub
       - sensor.harmony_hub
       - sensor.amazon_alexa
+      - sensor.google_home
       - sensor.slimme_meter
       - sensor.toon_thermostaat
       - sensor.pihole_dns
@@ -354,7 +369,7 @@
       - sensor.sony_bravia
       - sensor.ziggo_horizon
       - sensor.camera_veranda
-      - sensor.camera_hal
+      - sensor.camera_garage
  
   batterylevels:
    name: Batterij status
