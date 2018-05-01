@@ -21,6 +21,9 @@
       - minutely_summary
       - hourly_summary
       - daily_summary
+  
+  - platform: travisci
+    api_key: !secret travis_key
 
   - platform: dsmr
     host: 192.168.1.155
