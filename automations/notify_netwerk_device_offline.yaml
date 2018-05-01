@@ -1,0 +1,98 @@
+  alias: Notification - Alert wanneer netwerk device langer dan 5 minuten offline is
+  trigger:
+    - platform: state
+      entity_id: sensor.hue_hub_beneden
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.hue_hub_boven
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.tradfri_hub
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.xiaomi_hub
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.harmony_hub
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.google_home
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.slimme_meter
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.toon_thermostaat
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.synology_diskstation
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.deco_woonkamer
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.deco_logeerkamer
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.keuken
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.deco_boven
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.camera_garage
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.camera_veranda
+      to: 'offline'
+      for:
+        minutes: 5
+    - platform: state
+      entity_id: sensor.pihole_dns
+      to: 'offline'
+      for:
+        minutes: 5    
+  condition:
+    condition: and
+    conditions:
+      - condition: template
+        value_template: >
+          {% if states.automation.notify_netwerk_device_offline.last_triggered is not none %}
+            {% if as_timestamp(now()) | int   -  as_timestamp(states.automation.notify_netwerk_device_offline.last_triggered) | int > 3600 %} true {% else %} false
+            {% endif %}
+          {% else %}
+          false
+          {% endif %}
+  action:
+    - service: notify.pushover
+      data_template:
+        title: "Home Assistant"
+        message: '{{trigger.to_state.attributes.friendly_name}} is offline.'

@@ -316,7 +316,7 @@
   ups:
     name: APC CS650
     entities:
-      - sensor.apc_ups_status_data
+      - sensor.apc_ups
       - sensor.apc_ups_input_voltage
       - sensor.apc_ups_load
       - sensor.apc_ups_input_voltage
