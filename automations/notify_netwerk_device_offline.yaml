@@ -80,6 +80,11 @@
       to: 'offline'
       for:
         minutes: 5    
+    - platform: state
+      entity_id: sensor.apc_ups
+      to: 'offline'
+      for:
+        minutes: 5            
   condition:
     condition: and
     conditions:
