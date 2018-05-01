@@ -96,6 +96,7 @@
       - group.devices
       - group.batterylevels
       - group.haveibeenpwnd
+      - group.build_status
   sensoren_view:
     view: yes
     name: Sensoren
@@ -376,4 +377,10 @@
    entities:
       - sensor.badkamer 
       - sensor.wc
-
+  
+  build_status:
+    name: Build status
+    entities:
+      - sensor.wpeterwhomeassistant_last_build_duration
+      - sensor.wpeterwhomeassistant_last_build_finished_at
+      - sensor.wpeterwhomeassistant_last_build_state
