@@ -94,6 +94,8 @@
       - group.internet
       - group.pihole
       - group.devices
+      - group.network
+      - group.cameras
       - group.batterylevels
       - group.haveibeenpwnd
       - group.build_status
@@ -365,13 +367,23 @@
       - sensor.google_home
       - sensor.slimme_meter
       - sensor.toon_thermostaat
-      - sensor.pihole_dns
       - sensor.synology_diskstation
       - sensor.sony_bravia
       - sensor.ziggo_horizon
+  network:
+    name: Netwerk
+    entities:
+      - sensor.deco_woonkamer
+      - sensor.deco_keuken
+      - sensor.deco_logeerkamer
+      - sensor.deco_boven
+      - sensor.router_garage
+      - sensor.pihole_dns 
+  cameras:
+    name: Camera's
+    entities:
       - sensor.camera_veranda
       - sensor.camera_garage
- 
   batterylevels:
    name: Batterij status
    entities:

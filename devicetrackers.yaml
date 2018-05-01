@@ -1,2 +1,20 @@
-  - platform: nmap_tracker
-    hosts: 192.168.1.0/24
+  - platform: ping
+    hosts:
+      camera_garage: !secret camera_garage
+      camera_veranda: !secret camera_veranda
+      hue_boven: !secret hue_boven
+      hue_beneden: !secret hue_beneden
+      harmony_hub: !secret harmony_hub
+      slimme_meter: !secret slimme_meter
+      google_home: !secret google_home
+      xiaomi_hub: !secret xiaomi_hub
+      amazon_alexa: !secret amazon_alexa
+      router_garage: !secret router_garage
+      tradfri_hub: !secret tradfri_hub
+      pihole_dns: !secret pihole_dns
+      deco_woonkamer: !secret deco_woonkamer
+      deco_logeerkamer: !secret deco_logeerkamer
+      deco_keuken: !secret deco_keuken
+      deco_boven: !secret deco_boven
+      synology_nas: !secret synology_nas
+      ziggo_horizon: !secret ziggo_horizon

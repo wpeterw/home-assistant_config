@@ -267,60 +267,84 @@
       camera_veranda:
         friendly_name: 'Camera veranda'
         icon_template: mdi:cctv
-        value_template: "{% if is_state('device_tracker.aca213681cfa', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.camera_veranda', 'home') %}online{% else %}offline{% endif %}"
       camera_garage:
         friendly_name: 'Camera garage'
         icon_template: mdi:cctv
-        value_template: "{% if is_state('device_tracker.001217727b77', 'home') %}online{% else %}offline{% endif %}"   
+        value_template: "{% if is_state('device_tracker.camera_garage', 'home') %}online{% else %}offline{% endif %}"   
       ziggo_horizon:
         friendly_name: 'Ziggo Horizon'
         icon_template: mdi:television-box
-        value_template: "{% if is_state('device_tracker.upcgw_4600tomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.ziggo_horizon', 'home') %}online{% else %}offline{% endif %}"
       sony_bravia:
         friendly_name: 'Sony Bravia'
         icon_template: mdi:television
-        value_template: "{% if is_state('device_tracker.sony_braviatomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.sony_bravia', 'home') %}online{% else %}offline{% endif %}"
       synology_diskstation:
         friendly_name: 'Synology Diskstation'
         icon_template: mdi:nas
-        value_template: "{% if is_state('device_tracker.diskstationtomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.synology_nas', 'home') %}online{% else %}offline{% endif %}"
       pihole_dns:
         friendly_name: 'Pihole dns'
         icon_template: mdi:dns
-        value_template: "{% if is_state('device_tracker.piholetomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.pihole_dns', 'home') %}online{% else %}offline{% endif %}"
       toon_thermostaat:
         friendly_name: 'Toon thermostaat'
         icon_template: mdi:thermostat-box
-        value_template: "{% if is_state('device_tracker.eneco001061879tomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.toon_thermostaat', 'home') %}online{% else %}offline{% endif %}"
       slimme_meter:
         friendly_name: 'Slimme meter'
         icon_template: mdi:flash
-        value_template: "{% if is_state('device_tracker.slimmemetertomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.slimme_meter', 'home') %}online{% else %}offline{% endif %}"
       amazon_alexa:
         friendly_name: 'Amazon Alexa'
         icon_template: mdi:amazon-alexa
-        value_template: "{% if is_state('device_tracker.amazon12505eab4tomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.amazon_alexa', 'home') %}online{% else %}offline{% endif %}"
       google_home:
         friendly_name: 'Google Home'
         icon_template: mdi:google-assistant
-        value_template: "{% if is_state('device_tracker.googlehomeminitomatolocal', 'home') %}online{% else %}offline{% endif %}"      
+        value_template: "{% if is_state('device_tracker.google_home', 'home') %}online{% else %}offline{% endif %}"      
       harmony_hub:
         friendly_name: 'Harmony hub'
         icon_template: mdi:remote
-        value_template: "{% if is_state('device_tracker.harmony_hubtomatolocal', 'home') %}online{% else %}offline{% endif %}"
+        value_template: "{% if is_state('device_tracker.harmony_hub', 'home') %}online{% else %}offline{% endif %}"
       xiaomi_hub:
         friendly_name: 'Xiaomi hub'
         icon_template: mdi:home-automation
-        value_template: "{% if is_state('device_tracker.lumigatewayv3_miio44685363tomatolocal', 'home') %}online{% else %}offline{% endif %}"        
+        value_template: "{% if is_state('device_tracker.xiaomi_hub', 'home') %}online{% else %}offline{% endif %}"        
       tradfri_hub:
         friendly_name: 'Tradfri hub'
         icon_template: mdi:home-automation
-        value_template: "{% if is_state('device_tracker.tradfri_hubtomatolocal', 'home') %}online{% else %}offline{% endif %}"        
+        value_template: "{% if is_state('device_tracker.tradfri_hub', 'home') %}online{% else %}offline{% endif %}"        
       hue_hub_boven:
         friendly_name: 'Hue hub boven'
         icon_template: mdi:home-automation
-        value_template: "{% if is_state('device_tracker.hue_boventomatolocal', 'home') %}online{% else %}offline{% endif %}"                
+        value_template: "{% if is_state('device_tracker.hue_boven', 'home') %}online{% else %}offline{% endif %}"                
       hue_hub_beneden:
         friendly_name: 'Hue hub beneden'
         icon_template: mdi:home-automation
-        value_template: "{% if is_state('device_tracker.hue_benedentomatolocal', 'home') %}online{% else %}offline{% endif %}"                        
+        value_template: "{% if is_state('device_tracker.hue_beneden', 'home') %}online{% else %}offline{% endif %}"                        
+      deco_woonkamer:
+        friendly_name: 'Deco woonkamer'
+        icon_template: mdi:wifi
+        value_template: "{% if is_state('device_tracker.deco_woonkamer', 'home') %}online{% else %}offline{% endif %}"
+      deco_keuken:
+        friendly_name: 'Deco keuken'
+        icon_template: mdi:wifi
+        value_template: "{% if is_state('device_tracker.deco_keuken', 'home') %}online{% else %}offline{% endif %}"        
+      deco_logeerkamer:
+        friendly_name: 'Deco logeerkamer'
+        icon_template: mdi:wifi
+        value_template: "{% if is_state('device_tracker.deco_logeerkamer', 'home') %}online{% else %}offline{% endif %}"        
+      deco_boven:
+        friendly_name: 'Deco boven'
+        icon_template: mdi:wifi
+        value_template: "{% if is_state('device_tracker.deco_boven', 'home') %}online{% else %}offline{% endif %}"                
+      router_garage:
+        friendly_name: 'Router garage'
+        icon_template: mdi:router-wireless
+        value_template: "{% if is_state('device_tracker.router_garage', 'home') %}online{% else %}offline{% endif %}"                
+      apc_ups:
+        friendly_name: 'APC UPS'
+        icon_template: mdi:power-plug
+        value_template: "{% if is_state('sensor.apc_ups_status_data', 'OL') %}online{% else %}offline{% endif %}"                

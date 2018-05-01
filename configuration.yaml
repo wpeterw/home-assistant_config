@@ -86,6 +86,7 @@ mqtt: !include mqtt.yaml
 history: !include history.yaml
 device_tracker: !include devicetrackers.yaml
 switch: !include switches.yaml
+notify: !include notify.yaml
 
 # rest ###################################################################
 # Geccorrigeerde stand ivm metervervanging. Stand oude meter: 3746

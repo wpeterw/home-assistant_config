@@ -1,0 +1,15 @@
+  alias: Camera veranda offline
+  trigger:
+    platform: state
+    entity_id: device_tracker.camera_veranda
+    from: 'online'
+    to: 'offline'
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  action:
+     - service: notify.pushover
+       data:
+        message: 'Camera veranda is offline'
+        title: 'Device offline waarschuwing'         
