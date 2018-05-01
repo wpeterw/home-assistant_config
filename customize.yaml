@@ -149,3 +149,6 @@ device_tracker.c863f152ce8c:
   friendly_name: Playstation 4
 binary_sensor.cube_158d00011a023f:
   friendly_name: Xiaomi magic cube
+sensor.wpeterwhomeassistant_last_build_state:
+  friendly_name: Build Status
+  entity_picture: https://api.travis-ci.org/wpeterw/home-assistant.svg?branch=master
