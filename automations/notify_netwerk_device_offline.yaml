@@ -95,4 +95,4 @@
     - service: notify.pushover
       data_template:
         title: "Home Assistant"
-        message: '{{trigger.to_state.attributes.friendly_name}} is offline.'
+        message: '{{trigger.to_state.attributes.friendly_name}} is 5 minuten offline.'
