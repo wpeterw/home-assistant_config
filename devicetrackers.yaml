@@ -18,3 +18,4 @@
       deco_boven: !secret deco_boven
       synology_nas: !secret synology_nas
       ziggo_horizon: !secret ziggo_horizon
+      sony_bravia: !secret sony_bravia
