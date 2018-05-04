@@ -1,37 +1,31 @@
   - name: Keuken normaal
     entities:
         light.keuken_achter:
-            state: on
+            state: off
             transition: 3
-            brightness: 110
         light.keuken_midden:
-            state: on
+            state: off
             transition: 3
-            brightness: 110
         light.keuken_voor:
-            state: on
+            state: off
             transition: 3
-            brightness: 110
         light.aanrecht_links:
-            state: on
+            state: off
             transition: 3
-            brightness: 110
         light.aanrecht_midden:
-            state: on
+            state: off
             transition: 3
-            brightness: 110
         light.aarecht_rechts:
-            state: on
+            state: off
             transition: 3
-            brightness: 110
         light.color_temperature_light_1:    
             state: on
             transition: 3
-            brightness: 110
+            brightness: 90
             color_temp: 450
         light.color_temperature_light_2:    
             state: on
             transition: 3
-            brightness: 110
+            brightness: 90
             color_temp: 450
             

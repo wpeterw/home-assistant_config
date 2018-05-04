@@ -207,9 +207,6 @@
       - light.aanrecht_links
       - light.aanrecht_midden
       - light.aanrecht_rechts
-  keuken_hanglampen:
-    name: Keuken hanglampen
-    entities:
       - light.color_temperature_light_1
       - light.color_temperature_light_2
   keuken_sensors:
