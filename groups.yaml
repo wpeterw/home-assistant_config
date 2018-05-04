@@ -29,11 +29,15 @@
       - group.hal
       - group.kelder
       - group.bijkeuken
+      - group.keuken_aanrecht
+      - group.keuken
+      
+      - group.wc
   keuken_view:
     view: yes
     name: keuken
     entities:
-      - group.keuken
+      - group.keuken_hanglampen
       - group.keuken_aanrecht
       - group.keuken_sensors
   boven_view:
