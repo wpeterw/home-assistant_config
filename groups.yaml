@@ -194,15 +194,20 @@
   keuken:
     name: Keuken
     entities:
-      - light.dimmable_light_1_4
-      - light.dimmable_light_1_5
-      - light.dimmable_light_1_6
+      - light.keuken_achter
+      - light.keuken_midden
+      - light.keuken_voor
   keuken_aanrecht:
     name: Keuken aanrecht
     entities:
-      - light.dimmable_light_1
-      - light.dimmable_light_1_2
-      - light.dimmable_light_1_3
+      - light.aanrecht_links
+      - light.aanrecht_midden
+      - light.aanrecht_rechts
+  keuken_hanglampen:
+    name: Keuken hanglampen
+    entities:
+      - light.color_temperature_light_1
+      - light.color_temperature_light_2
   keuken_sensors:
     name: Keuken sensors
     entities:
