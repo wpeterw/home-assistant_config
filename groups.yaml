@@ -289,7 +289,7 @@
       - automation.verlichting_buiten_ochtend_uit
       - automation.upload_gas_usage_to_mindergasnl
   scenes:
-    name: scenes
+    name: Scenes
     entities:
       - scene.hanglampen_aan
       - scene.hanglampen_uit
