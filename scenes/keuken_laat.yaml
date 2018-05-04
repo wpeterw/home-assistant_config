@@ -1,4 +1,4 @@
-  - name: Keuken normaal
+  - name: Keuken laat
     entities:
         light.keuken_achter:
             state: off
