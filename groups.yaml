@@ -198,9 +198,9 @@
   keuken:
     name: Keuken
     entities:
+      - light.keuken_voor
       - light.keuken_achter
       - light.keuken_midden
-      - light.keuken_voor
   keuken_aanrecht:
     name: Keuken aanrecht
     entities:
