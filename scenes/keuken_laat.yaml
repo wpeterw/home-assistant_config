@@ -3,7 +3,7 @@
         light.keuken_achter:
             state: off
             transition: 3
-        light.keuken_midden:
+        light.keuken_miden:
             state: off
             transition: 3
         light.keuken_voor:
