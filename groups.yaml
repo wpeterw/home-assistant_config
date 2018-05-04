@@ -299,6 +299,7 @@
       - scene.woonkamer_normaal
       - scene.woonkamer_ochtend
       - scene.keuken_normaal
+      - scene.keuken_laat
       - scene.keuken_uit
   google_calendar:
     name: Calendar
