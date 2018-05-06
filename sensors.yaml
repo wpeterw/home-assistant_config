@@ -3,25 +3,44 @@
       - !secret email1
       - !secret email2
 
-  - platform: darksky
-    api_key: !secret darksky_api
-    language: nl
+  - platform: buienradar
+    name: Annen
+    latitude: !secret latitude
+    longitude: !secret longitude
     monitored_conditions:
-      - icon
-      - summary
-      - temperature
-      - apparent_temperature
-      - temperature_max
-      - temperature_min
-      - apparent_temperature_max
-      - apparent_temperature_min
-      - humidity
-      - precip_probability
-      - precip_type
-      - minutely_summary
-      - hourly_summary
-      - daily_summary
-  
+      # current condition:
+      - condition
+      - conditioncode
+      - conditiondetailed
+      - conditionexact
+      - symbol
+      # conditions for forecasted data:
+      - symbol_1d
+      - symbol_2d
+      - symbol_3d
+      - symbol_4d
+      - symbol_5d
+      - temperature_1d
+      - temperature_2d
+      - temperature_3d
+      - temperature_4d
+      - temperature_5d
+      - rainchance_1d
+      - rainchance_2d
+      - rainchance_3d
+      - rainchance_4d
+      - rainchance_5d
+      - sunchance_1d
+      - sunchance_2d
+      - sunchance_3d
+      - sunchance_4d
+      - sunchance_5d
+      - rain_1d
+      - rain_2d
+      - rain_3d
+      - rain_4d
+      - rain_5d
+
   - platform: travisci
     api_key: !secret travis_key
 

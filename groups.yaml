@@ -29,9 +29,7 @@
       - group.hal
       - group.kelder
       - group.bijkeuken
-      - group.keuken_aanrecht
       - group.keuken
-      
       - group.wc
   keuken_view:
     view: yes
@@ -39,6 +37,7 @@
     entities:
       - group.keuken_hanglampen
       - group.keuken_aanrecht
+      - group.keuken_hanglampen
       - group.keuken_sensors
   boven_view:
     view: yes
@@ -209,6 +208,11 @@
       - light.aanrecht_rechts
       - light.color_temperature_light_1
       - light.color_temperature_light_2
+  keuken_hanglampen:
+    name: Keuken hanglampen
+    entities:
+      - light.hanglamp_links
+      - light.hanglamp_rechts
   keuken_sensors:
     name: Keuken sensors
     entities:
