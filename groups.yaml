@@ -4,7 +4,8 @@
     entities:
       - group.woonkamer
       - group.hal
-      - group.keuken
+      - group.keuken_hanglampen
+      - group.keuken_achter
       - group.keuken_aanrecht
       - group.bijkeuken
       - group.wc
@@ -37,7 +38,7 @@
     entities:
       - group.keuken_hanglampen
       - group.keuken_aanrecht
-      - group.keuken_hanglampen
+      - group.keuken_achter
       - group.keuken_sensors
   boven_view:
     view: yes
@@ -132,14 +133,9 @@
     name: Weer
     entities:
       - sun.sun
-      - sensor.dark_sky_temperature 
-      - sensor.dark_sky_daily_high_temperature
-      - sensor.dark_sky_daily_low_temperature
-      - sensor.dark_sky_precip_probability
-      - sensor.dark_sky_humidity
-      - sensor.dark_sky_pressure
-      - sensor.dark_sky_hourly_summary
-      - sensor.dark_sky_daily_summary
+      - sensor.annen_condition
+      - sensor.annen_symbol
+      
   buiten:
     name: Buiten
     entities:
@@ -194,8 +190,8 @@
       - light.slaapkamer_jorn_3
       - light.slaapkamer_jorn_4      
       - light.slaapkamer_jorn_5
-  keuken:
-    name: Keuken
+  keuken_achter:
+    name: Keuken achter
     entities:
       - light.keuken_voor
       - light.keuken_achter
@@ -206,8 +202,6 @@
       - light.aanrecht_links
       - light.aanrecht_midden
       - light.aanrecht_rechts
-      - light.color_temperature_light_1
-      - light.color_temperature_light_2
   keuken_hanglampen:
     name: Keuken hanglampen
     entities:
