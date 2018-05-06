@@ -20,6 +20,7 @@
       - symbol_3d
       - symbol_4d
       - symbol_5d
+      - mintemp_1d
       - temperature_1d
       - temperature_2d
       - temperature_3d
