@@ -135,7 +135,7 @@
       - sun.sun
       - sensor.annen_condition
       - sensor.annen_symbol
-      
+
   buiten:
     name: Buiten
     entities:
@@ -205,8 +205,8 @@
   keuken_hanglampen:
     name: Keuken hanglampen
     entities:
-      - light.hanglamp_links
-      - light.hanglamp_rechts
+      - light.color_temperature_light_1
+      - light.color_temperature_light_2
   keuken_sensors:
     name: Keuken sensors
     entities:
