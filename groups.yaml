@@ -133,7 +133,8 @@
     name: Weer
     entities:
       - sun.sun
-      - sensor.annen_condition
+      - sensor.annen_temperature_1d
+      - sensor.annen_mintemp_1d
       - sensor.annen_symbol
 
   buiten:
