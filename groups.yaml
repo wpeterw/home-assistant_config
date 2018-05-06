@@ -134,7 +134,7 @@
     entities:
       - sun.sun
       - sensor.annen_temperature_1d
-      - sensor.annen_mintemp_1d
+      - sensor.annen_minimum_temperature_1d
       - sensor.annen_symbol
 
   buiten:
