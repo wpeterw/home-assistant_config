@@ -1,7 +1,8 @@
-  - alias: PS4 max playtime enforver
+  - alias: PS4 max playtime enforcer
     trigger:
       - platform: time
         minutes: '/5'
+        seconds: '00'
     condition:
       condition: and
       conditions:
