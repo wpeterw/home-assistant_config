@@ -1,4 +1,4 @@
-  - name: Keuken laat
+  - alias: Keuken laat
     entities:
         light.keuken_achter:
             state: off
