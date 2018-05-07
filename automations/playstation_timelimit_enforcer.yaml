@@ -7,7 +7,7 @@ condition:
   conditions:
     - condition: state
       entity_id: media_player.playstation_4
-      state: 'Playing'
+      state: 'playing'
     - condition: template
       value_template: '{{ states.sensor.ps4_vandaag.state | float > 2 }}'
 action:
