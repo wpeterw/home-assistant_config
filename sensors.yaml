@@ -209,6 +209,14 @@
 
   - platform: fastdotcom
 
+  - platform: history_stats
+    name: PS4 Vandaag
+    entity_id: media_player.playstation_4
+    state: 'on'
+    type: time
+    start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    end: '{{ now() }}'
+
 # templates #########################################################
 
   - platform: template
@@ -367,4 +375,4 @@
       apc_ups:
         friendly_name: 'APC UPS'
         icon_template: mdi:power-plug
-        value_template: "{% if is_state('sensor.apc_ups_status_data', 'OL') %}online{% else %}offline{% endif %}"                
+        
