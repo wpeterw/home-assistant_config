@@ -1,0 +1,6 @@
+ - service: script.turn_on
+   entity_id: script.sonos_tts
+   data:
+     variables:
+       where: 'media_player.living_room'
+       what: 'Now, young Skywalker, your playstation will die.'
