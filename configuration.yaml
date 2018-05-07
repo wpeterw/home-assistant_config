@@ -37,7 +37,7 @@ recorder:
 http:
   api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+  base_url: !secrets base_url
   cors_allowed_origins:
     - https://reformedreality.com
     - http://reformedreality.com
@@ -52,6 +52,11 @@ panel_iframe:
 frontend:
 
 config:
+
+# speech ##################################################################
+
+tts:
+  - platform: google
 
 # location and time #######################################################
 
