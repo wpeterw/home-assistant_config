@@ -1,15 +1,15 @@
-- alias: PS4 max playtime enforver
-  trigger:
-    - platform: time
-      minutes: '/5'
-  condition:
-    condition: and
-    conditions:
-    - condition: state
-      entity_id: media_player.playstation_4
-      state: 'Playing'
-    - condition: template
-      value_template: '{{ states.sensor.ps4_vandaag.state | float > 2 }}'
-  action:
-    - service: homeassistant.turn_on
-      entity_id: script.ps4_notify
+  - alias: PS4 max playtime enforver
+    trigger:
+      - platform: time
+        minutes: '/5'
+    condition:
+      condition: and
+      conditions:
+      - condition: state
+        entity_id: media_player.playstation_4
+        state: 'Playing'
+      - condition: template
+        value_template: '{{ states.sensor.ps4_vandaag.state | float > 2 }}'
+    action:
+      - service: homeassistant.turn_on
+        entity_id: script.ps4_notify
