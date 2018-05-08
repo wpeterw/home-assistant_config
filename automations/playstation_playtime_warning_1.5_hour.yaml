@@ -1,0 +1,17 @@
+alias: PS4 playtime warning 1.5 hour
+trigger:
+  - platform: time
+    minutes: '/1'
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: media_player.playstation_4
+      state: 'playing'
+    - condition: template
+      value_template: '{{ states.sensor.ps4_vandaag.state | float >= 1.5 <= 1.502 }}'
+action:
+  - service: tts.google_say
+    entity_id: media_player.living_room
+    data:
+      message: Young Skywalker, you have used one and a half hour of your playtime. But don't worry, you have 30 minutes left.
