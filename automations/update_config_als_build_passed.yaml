@@ -1,7 +1,0 @@
-  alias: 'Update config wanneer build is passed'
-  trigger:
-    platform: state
-    entity_id: sensor.wpeterwhomeassistant_last_build_state
-    to: 'passed'
-  action:
-    - service: script.get_latest_config

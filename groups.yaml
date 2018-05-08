@@ -233,8 +233,8 @@
   wc:
     name: wc
     entities:
-      - light.dimmable_light_1_7
-      - light.dimmable_light_1_8
+      - light.wc_1
+      - light.wc_2
   media:
     name: Media
     entities:
