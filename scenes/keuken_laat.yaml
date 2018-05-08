@@ -1,21 +1,9 @@
   - name: Keuken laat
     entities:
-        light.keuken_achter:
+        group.keuken_aanrecht:
             state: off
             transition: 3
-        light.keuken_miden:
-            state: off
-            transition: 3
-        light.keuken_voor:
-            state: off
-            transition: 3
-        light.aanrecht_links:
-            state: off
-            transition: 3
-        light.aanrecht_midden:
-            state: off
-            transition: 3
-        light.aarecht_rechts:
+        group.keuken_achter:
             state: off
             transition: 3
         light.color_temperature_light_1:    
