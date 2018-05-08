@@ -37,7 +37,7 @@ recorder:
 http:
   api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  base_url: !secrets base_url
+  base_url: !secret base_url
   cors_allowed_origins:
     - https://reformedreality.com
     - http://reformedreality.com
