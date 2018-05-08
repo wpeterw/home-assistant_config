@@ -15,7 +15,7 @@ action:
     entity_id: script.say
     data:
       variables:
-        master: 'media_player.living_room'
+        master: 'media_player.tv'
         where: 'media_player.living_room'
         volume: '1'
         what: 'Young Skywalker, your playstation will die now'
