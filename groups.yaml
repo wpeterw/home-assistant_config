@@ -352,17 +352,14 @@
       - sensor.breaches_peterwieringagmailcom
       - sensor.breaches_peterwieringame
   wasmachine_en_droger:
-    name: Wassen, drogen en koelen
+    name: Wassen en drogen
     entities:
       - sensor.verbruik_droger_vandaag
       - sensor.verbruik_droger_gisteren      
       - sensor.verbruik_wasmachine_vandaag
       - sensor.verbruik_wasmachine_gisteren
-      - sensor.verbruik_koelkast_en_vriezer_vandaag
-      - sensor.verbruik_koelkast_en_vriezer_gisteren
       - sensor.verbruik_droger_actueel
       - sensor.verbruik_wasmachine_actueel
-      - sensor.verbruik_koelkast_en_vriezer_actueel    
   devices:
     name: Devices
     entities:
