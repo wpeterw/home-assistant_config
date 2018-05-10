@@ -2,10 +2,10 @@
     entities:
         group.keuken_aanrecht:
             state: off
-            transition: 3
+            transition: 2
         group.keuken_achter:
             state: off
-            transition: 3
+            transition: 2
         light.color_temperature_light_1:    
             state: on
             transition: 3
