@@ -1,4 +1,4 @@
-  alias: Verlichting keuken aan
+  alias: Verlichting keuken aan laat
   initial_state: True
   trigger:
     platform: time
