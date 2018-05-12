@@ -62,34 +62,6 @@
       - battery.runtime
       - battery.charge
 
-  - platform: mqtt_room
-    device_id: fb564ff0af5f
-    name: 'Mercedes'
-    state_topic: 'happy-bubbles/presence/ha'
-    timeout: 5
-    away_timeout: 30
-
-  - platform: mqtt_room
-    device_id: cc6458a8b1da
-    name: 'Juul'
-    state_topic: 'happy-bubbles/presence/ha'
-    timeout: 5
-    away_timeout: 30  
-  
-  - platform: mqtt_room
-    device_id: d402fae919f7
-    name: 'Jorn'
-    state_topic: 'happy-bubbles/presence/ha'
-    timeout: 5
-    away_timeout: 30
-
-  - platform: mqtt_room
-    device_id: dd7eeaa9f962
-    name: 'Volkswagen'
-    state_topic: 'happy-bubbles/presence/ha'
-    timeout: 5
-    away_timeout: 300
-
   - platform: google_travel_time
     name: Reistijd Peter ochtend
     api_key: !secret maps_api_key
@@ -173,19 +145,10 @@
     value_template: "{{ value_json['ENERGY'].Yesterday}}"
     unit_of_measurement: "kWh"
 
-  - platform: mqtt
-    state_topic: 'location/owner/benenden/88:75:98:C6:0D:30'
-    value_template: '{{ value_json.confidence }}'
-    unit_of_measurement: '%'
-    name: 'Peter beneden'
-
-  - platform: min_max
-    name: "Peter Home Occupancy Confidence"
-    type: mean
-    round_digits: 0
-    entity_ids:
-    - sensor.peter_beneden
-
+  - platform: postnl
+    username: !secret postnl_user
+    password: !secret postnl_password
+  
   - platform: systemmonitor
     resources:
       - type: disk_use_percent
