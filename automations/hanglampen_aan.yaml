@@ -1,5 +1,5 @@
   alias: Hanglampen aan met Hue dimmer switch
-  initial_state: True
+  initial_state: 'on'
   trigger:
     platform: mqtt
     topic: hue/woonkamer/buttonevent

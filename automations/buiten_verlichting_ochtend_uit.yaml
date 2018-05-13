@@ -1,5 +1,5 @@
   alias: Verlichting buiten ochtend uit
-  initial_state: True
+  initial_state: 'on'
   trigger:
     platform: sun
     event: sunrise

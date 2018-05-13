@@ -1,5 +1,5 @@
   alias: Pause Sonos at night
-  initial_state: True
+  initial_state: 'on'
   trigger:
     platform: time
     hours: 23

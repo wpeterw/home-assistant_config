@@ -1,5 +1,5 @@
   alias: Verlichting buiten ochtend aan
-  initial_state: True
+  initial_state: 'on'
   trigger:
     - platform: time
       at: '07:00:00'

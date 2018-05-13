@@ -1,5 +1,5 @@
   alias: Verlichting keuken aan
-  initial_state: True
+  initial_state: 'on'
   trigger:
     platform: sun
     event: sunset

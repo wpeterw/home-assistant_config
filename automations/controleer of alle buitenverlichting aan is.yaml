@@ -1,5 +1,5 @@
 alias: controleer of alle buitenverlichting aan is
-initial_state: True
+initial_state: 'on'
 trigger:
   - platform: time
     minutes: '/5'
