@@ -14,9 +14,7 @@
       - group.weer
       - group.kelder
       - group.sensoren
-      - group.reistijd_ochtend
-      - group.reistijd_avond
-      - group.battery_levels
+      - group.post_nl
   woonkamer_view:
     view: yes
     name: Woonkamer
@@ -302,25 +300,6 @@
       - scene.keuken_normaal
       - scene.keuken_laat
       - scene.keuken_uit
-  google_calendar:
-    name: Calendar
-    entities:
-      - calendar.peterwieringagmailcom
-  reistijd_ochtend:
-    name: Reistijd ochtend
-    entities:
-      - sensor.reistijd_peter_ochtend
-      - sensor.reistijd_kasia_ochtend
-  reistijd_avond:
-    name: Reistijd avond
-    entities:
-      - sensor.reistijd_peter_avond
-      - sensor.reistijd_kasia_avond
-  battery_levels:
-    name: Batterij levels
-    entities:
-      - sensor.fibaro_system_fgms001_motion_sensor_general_5_0_battery
-      - sensor.fibaro_system_fgms001_motion_sensor_general_2_0_battery
   ups:
     name: APC CS650
     entities:
@@ -401,3 +380,7 @@
       - sensor.wpeterwhomeassistant_last_build_duration
       - sensor.wpeterwhomeassistant_last_build_finished_at
       - sensor.wpeterwhomeassistant_last_build_state
+  post_nl:
+    name: PostNL 
+    entities:
+      - sensor.postnl

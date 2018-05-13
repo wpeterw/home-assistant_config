@@ -41,18 +41,6 @@ sensor.kelder_temperature:
   friendly_name: Temperatuur kelder
 camera.escam_veranda:
   friendly_name: Camera veranda
-sensor.reistijd_kasia_ochtend:
-  friendly_name: Reistijd Kasia ochtend
-  icon: mdi:car
-sensor.reistijd_peter_ochtend:
-  friendly_name: Reistijd Peter ochtend
-  icon: mdi:car
-sensor.reistijd_kasia_avond:
-  friendly_name: Reistijd Kasia avond
-  icon: mdi:car
-sensor.reistijd_peter_avond:
-  friendly_name: Reistijd Peter avond
-  icon: mdi:car
 binary_sensor.fibaro_system_fgms001_motion_sensor_sensor_2:
   friendly_name: Beweging woonkamer
   icon: mdi:eye
@@ -140,4 +128,5 @@ sensor.annen_minimum_temperature_1d:
   friendly_name: Minimum temperatuur
 sensor.annen_symbol:
   friendly_name: Vandaag  
-  
+sensor.postnl:
+  friendly_name: Pakketten onderweg  
