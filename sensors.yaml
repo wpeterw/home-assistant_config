@@ -348,6 +348,4 @@
         friendly_name: 'APC UPS'
         icon_template: mdi:power-plug
         value_template: "{% if is_state('sensor.apc_ups_status_data', 'OL') %}online{% else %}offline{% endif %}"   
-      postnl:
-        friendly_name: 'PostNL'
-        value_template: "{% if is_state('sensor.nl', 'package(s)') %}pakketten{% else %}pakket{% endif %}"   
+   
