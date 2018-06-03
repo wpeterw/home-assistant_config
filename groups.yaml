@@ -4,6 +4,7 @@
     entities:
       - group.woonkamer
       - group.hal
+      - group.logeerkamer
       - group.keuken_hanglampen
       - group.keuken_achter
       - group.keuken_aanrecht
@@ -26,6 +27,7 @@
     name: Beneden
     entities:
       - group.hal
+      - group.logeerkamer
       - group.kelder
       - group.bijkeuken
       - group.keuken
@@ -134,7 +136,11 @@
       - sensor.annen_temperature_1d
       - sensor.annen_minimum_temperature_1d
       - sensor.annen_symbol
-
+  Logeerkamer:
+      -  light.dimmable_light_1
+      -  light.dimmable_light_1_2
+      -  light.dimmable_light_2 
+      -  light.dimmable_light_3
   buiten:
     name: Buiten
     entities:
