@@ -105,4 +105,5 @@ rest_command:
     payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746 }}}'
 
 # mail tracking ###################################################################
+# custom component
 seventeentrack:
