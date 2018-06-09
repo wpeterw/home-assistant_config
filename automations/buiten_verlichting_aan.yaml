@@ -7,3 +7,5 @@
   action:
     - service: scene.turn_on
       entity_id: scene.buiten_avond_vroeg
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.buitenverlichting_aan
