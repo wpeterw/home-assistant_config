@@ -1,3 +1,4 @@
-input_boolean.buitenverlichting_aan:
-  friendly_name: Buitenverlichting aan
-  hidden: false
+scene_buitenverlichting_aan:
+  name: Scenec buitenverlichting aan
+  icon: mdi:lightbulb-on
+  initial: off
