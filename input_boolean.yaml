@@ -1,4 +1,4 @@
-scene_buitenverlichting_aan:
-  name: Scenec buitenverlichting aan
+scene_buiten_avond_vroeg_aan:
+  name: Scene buitenverlichting aan vroeg
   icon: mdi:lightbulb-on
   initial: off
