@@ -1,4 +1,4 @@
-alias: controleer of alle buitenverlichting aan is
+alias: controleer of alle buitenverlichting aan is vroeg
 initial_state: 'on'
 trigger:
   - platform: time

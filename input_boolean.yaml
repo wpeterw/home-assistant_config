@@ -2,3 +2,8 @@ scene_buiten_avond_vroeg_aan:
   name: Scene buitenverlichting aan vroeg
   icon: mdi:lightbulb-on
   initial: off
+
+scene_buiten_avond_laat_aan:
+  name: Scene buitenverlichting aan laat
+  icon: mdi:lightbulb-on
+  initial: off

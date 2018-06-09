@@ -7,3 +7,7 @@
   action:
     - service: scene.turn_on
       entity_id: scene.buiten_avond_laat
+    - service: input_boolean.turn_off
+      entity_id: scene_buiten_avond_vroeg_aan
+    - service: input_boolean.turn_on
+      entity_id: scene_buiten_avond_laat_aan
