@@ -7,12 +7,8 @@ condition:
   condition: and
   conditions:
     - condition: state
-      entity_id: 'group.buiten'
+      entity_id: 'input_boolean.buitenverlichting_aan'
       state: 'on'
-    - condition: sun
-      after: sunset
-    - condition: time
-      before: '21:00:00'
     - condition: or
       conditions:
       - condition: state

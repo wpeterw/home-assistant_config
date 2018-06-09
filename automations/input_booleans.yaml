@@ -1,4 +1,4 @@
 input_boolean.buitenverlichting_aan:
-  friendly_name: Buitenvelichting aan
+  friendly_name: Buitenverlichting aan
   hidden: false
   
