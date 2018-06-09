@@ -1,0 +1,4 @@
+input_boolean.buitenverlichting_aan:
+  friendly_name: Buitenvelichting aan
+  hidden: false
+  
