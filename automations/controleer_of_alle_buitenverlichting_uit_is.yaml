@@ -1,0 +1,61 @@
+alias: controleer of alle buitenverlichting uit is
+initial_state: 'on'
+trigger:
+  - platform: time
+    minutes: '/5'
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: 'input_boolean.scene_buiten_avond_laat_aan'
+      state: 'off'
+    - condition: state
+      entity_id: 'input_boolean.scene_buiten_avond_vroeg_aan'
+      state: 'off'
+    - condition: or
+      conditions:
+      - condition: state
+        entity_id: 'light.veranda'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.garage_achter'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.garage_zijkant'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.garage_voor'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lantaarn_jacuzzi'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.tuinpad_voor'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lantaarn_tuinpad'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.voordeur'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lantaarn_oprit'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lantaarn_oprit_voor'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.zwaveme_zme_0643305433_wall_flushmountable_dimmer_level_4_0'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.tuin_links'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lantaarn_achter'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.tuin_rechts'
+        state: 'on'
+action:
+  service: light.turn_off
+  entity_id: 'group.buiten'
