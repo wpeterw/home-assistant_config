@@ -10,4 +10,4 @@
     data:
       transition: 2
     service: input_boolean.turn_off
-    entity_id: input_boolean.scene_buitenverlichting_laat_aan
+    entity_id: input_boolean.scene_buiten_avond_laat_aan
