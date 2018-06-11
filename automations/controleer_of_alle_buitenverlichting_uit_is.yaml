@@ -57,5 +57,5 @@ condition:
         entity_id: 'light.tuin_rechts'
         state: 'on'
 action:
-  service: group.turn_off
-  entity_id: 'group.buiten
+  service: light.turn_off
+  entity_id: 'group.buiten'
