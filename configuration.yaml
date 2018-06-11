@@ -30,6 +30,7 @@ xiaomi_aqara:
 logbook:
 recorder:
   purge_keep_days: 7
+  purge_interval: 1
   db_url: !secret my_db
 
 # ui  #####################################################################
