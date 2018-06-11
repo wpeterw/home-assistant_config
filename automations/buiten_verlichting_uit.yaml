@@ -9,5 +9,6 @@
     entity_id: group.buiten
     data:
       transition: 2
+  action:
     service: input_boolean.turn_off
     entity_id: input_boolean.scene_buiten_avond_laat_aan
