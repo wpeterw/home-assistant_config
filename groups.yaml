@@ -322,6 +322,7 @@
       - sensor.average_load_1m
       - sensor.disk_use_
       - sensor.ram_use
+      - sensor.database_size
       - sensor.fastcom_download
       - sensor.ssl_cert_expiry
   pihole:
