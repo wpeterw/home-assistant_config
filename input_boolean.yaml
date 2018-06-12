@@ -7,3 +7,8 @@ scene_buiten_avond_laat_aan:
   name: Scene buitenverlichting aan laat
   icon: mdi:lightbulb-on
   initial: off
+
+scene_woonkamer_normaal:
+  name: Scene woonkamer normaal
+  icon: mdi:lightbulb-on
+  initial: off
