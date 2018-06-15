@@ -11,7 +11,7 @@ condition:
       state: 'on'
     - condition: state
       entity_id: 'input_boolean.automation_override'
-      state: 'off'    
+      state: 'off'
     - condition: or
       conditions:
       - condition: state
