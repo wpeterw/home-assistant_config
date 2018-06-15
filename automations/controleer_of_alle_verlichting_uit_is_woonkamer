@@ -1,0 +1,31 @@
+alias: controleer of alle verlichting uit is woonkamer
+initial_state: 'on'
+trigger:
+  - platform: time
+    minutes: '/5'
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: 'input_boolean.scene_woonkamer_normaal'
+      state: 'off'
+    - condition: or
+      conditions:
+      - condition: state
+        entity_id: 'light.dressoir'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lamp_achter_bank'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.eettafel'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.hue_iris'
+        state: 'on'
+      - condition: state
+        entity_id: 'light.lotek_lamp'
+        state: 'on'
+action:
+  service: light.turn_off
+  entity_id: 'group.woonkamer'

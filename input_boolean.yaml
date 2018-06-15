@@ -8,7 +8,13 @@ scene_buiten_avond_laat_aan:
   icon: mdi:lightbulb-on
   initial: off
 
+scene_woonkamer_normaal:
+  name: Scene woonkamer normaal
+  icon: mdi:lightbulb-on
+  initial: off
+
 automation_override:
   name: Automation override switch
   icon: mdi:switch
   initial: off
+

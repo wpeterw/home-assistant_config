@@ -5,5 +5,7 @@
     event: sunset
     offset: "-00:30:00"
   action:
-    service: scene.turn_on
-    entity_id: scene.woonkamer_normaal
+    - service: scene.turn_on
+      entity_id: scene.woonkamer_normaal
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.scene_woonkamer_normaal    
