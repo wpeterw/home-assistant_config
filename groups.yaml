@@ -109,6 +109,10 @@
     entities:
       - group.sensoren
   ####GROUPS
+  Overrides:
+    name: Override switches
+    entities:
+      - input_boolean.automation_override
   woonkamer:
     name: Woonkamer
     entities:

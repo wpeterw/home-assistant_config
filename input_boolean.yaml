@@ -7,3 +7,8 @@ scene_buiten_avond_laat_aan:
   name: Scene buitenverlichting aan laat
   icon: mdi:lightbulb-on
   initial: off
+
+automation_override:
+  name: Automation override switch
+  icon: mdi:switch
+  initial: off

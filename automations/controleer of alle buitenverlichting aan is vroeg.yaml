@@ -9,6 +9,9 @@ condition:
     - condition: state
       entity_id: 'input_boolean.scene_buiten_avond_vroeg_aan'
       state: 'on'
+    - condition: state
+      entity_id: 'input_boolean.automation_override'
+      state: 'off'    
     - condition: or
       conditions:
       - condition: state
