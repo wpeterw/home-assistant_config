@@ -103,6 +103,7 @@
       - group.batterylevels
       - group.haveibeenpwnd
       - group.build_status
+      - group.overrides
   sensoren_view:
     view: yes
     name: Sensoren
