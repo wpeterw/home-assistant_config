@@ -3,7 +3,7 @@
     name: Home
     entities:
       - group.woonkamer
-      - group.cameras
+      - group.camera
       - group.hal
       - group.logeerkamer
       - group.keuken_hanglampen
