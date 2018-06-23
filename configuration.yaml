@@ -110,7 +110,7 @@ rest_command:
 
 camera:
   - platform: xiaomi
-    name: Camera
+    name: Woonkamer
     host: !secret xiaofang_ip
     model: 'xiaofang'
     password: foo_bar
