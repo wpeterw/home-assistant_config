@@ -106,4 +106,12 @@ rest_command:
       AUTH-TOKEN: !secret token
     payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746 }}}'
 
+# Cameras ###################################################################
+
+camera:
+  - platform: xiaomi
+    name: Camera
+    host: !secret xiaofang_ip
+    model: 'xiaofang'
+    password: foo_bar
 
