@@ -24,6 +24,7 @@ xiaomi_aqara:
   gateways:
     - mac: !secret xiaomi_mac
       key: !secret xiaomi_key
+      
 ffmpeg:
 
 # logging ################################################################
