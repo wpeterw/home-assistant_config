@@ -31,7 +31,7 @@ ffmpeg:
 
 logbook:
 recorder:
-  purge_days: 7
+  purge_days: 6
   db_url: !secret my_db
 
 # ui  #####################################################################
