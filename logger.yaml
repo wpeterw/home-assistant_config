@@ -3,7 +3,7 @@
 #################################################################
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 
-default: warn
+default: critical
 logs:
   aiohttp.access: critical
   aiohttp.server: critical
@@ -17,7 +17,7 @@ logs:
   homeassistant.components.http: warn
   homeassistant.components.media_player: warn
   homeassistant.components.sensor.pi_hole: critical
-  homeassistant.components.recorder: debug
+  homeassistant.components.recorder: critical
   homeassistant.components.zwave: warn
   homeassistant.components.darksky: debug
   homeassistant.exceptions: info
