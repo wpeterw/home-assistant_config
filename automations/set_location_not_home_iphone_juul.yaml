@@ -13,4 +13,4 @@ action:
   data_template:
     topic: 'location/juul_iphone'
     retain: true
-    payload: 'not_home'
+    payload: 'Niet thuis'

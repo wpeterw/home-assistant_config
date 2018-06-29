@@ -13,4 +13,4 @@ action:
   data_template:
     topic: 'location/peter_s5'
     retain: true
-    payload: 'not_home'
+    payload: 'Niet thuis'

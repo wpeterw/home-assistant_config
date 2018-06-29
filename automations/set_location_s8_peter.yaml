@@ -13,5 +13,5 @@ action:
   data_template:
     topic: 'location/peter_s8'
     retain: true
-    payload: 'home'
+    payload: 'Thuis'
 
