@@ -2,7 +2,7 @@
   initial_state: 'on'
   trigger:
     platform: mqtt
-    topic: !secret iphone7_mqtt_topic
+    topic: '!secret iphone7_mqtt_topic'
   condition:
     condition: numeric_state
     entity_id: sensor.juul_iphone_presence
