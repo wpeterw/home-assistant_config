@@ -2,7 +2,7 @@ alias: 'Jorn Set Location Home'
 initial_state: 'on'
 trigger:
   platform: mqtt
-  topic: '!secret honor9_mqtt_topic'
+  topic: '!secret honor_9_mqtt_topic'
 condition:
   condition: numeric_state
   entity_id: sensor.jorn_honor_9_presence
