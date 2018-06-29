@@ -15,19 +15,3 @@
         retain: true
         payload: 'home'
 
-- alias: 'Juul Set Location Not_Home'
-  initial_state: 'on'
-  trigger:
-    platform: mqtt
-    topic: !secret iphone7_mqtt_topic
-  condition:
-    condition: numeric_state
-    entity_id: sensor.juul_iphone_presence
-    below: 50
-    value_template: '{{ state.state }}'
-  action:
-    - service: mqtt.publish
-      data_template:
-        topic: 'location/juul_iphone'
-        retain: true
-        payload: 'not_home'
