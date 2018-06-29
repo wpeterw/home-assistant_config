@@ -145,6 +145,18 @@
     value_template: "{{ value_json['ENERGY'].Yesterday}}"
     unit_of_measurement: "kWh"
 
+  - platform: mqtt
+    name: "Juul iPhone presence" 
+    state_topic: !secret iphone7_mqtt_topic
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+
+  - platform: mqtt
+    state_topic: 'location/juul_iphone'
+    name: 'Juul iPhone'
+    icon: mdi:mdi-cellphone-iphone
+  
+    
   - platform: postnl
     username: !secret postnl_user
     password: !secret postnl_password
