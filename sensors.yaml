@@ -171,7 +171,7 @@
 
   - platform: mqtt
     name: "Peter Galaxy S8 presence" 
-    state_topic: !secret samsugs8_mqtt_topic
+    state_topic: !secret samsungs8_mqtt_topic
     value_template: '{{ value_json.confidence }}'
     unit_of_measurement: '%'
 
