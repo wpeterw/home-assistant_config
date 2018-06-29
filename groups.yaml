@@ -285,7 +285,7 @@
       - sensor.juul_iphone
       - sensor.jorn_honor_9
       - sensor.kasia_iphone
-      - sensor.peter_s8
+      - sensor.peter_galaxy_s8
   meter_readings:
     name: Energie meters
     entities:
