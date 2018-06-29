@@ -1,4 +1,4 @@
-- alias: 'Juul Set Location Home'
+  alias: 'Juul Set Location Home'
   initial_state: 'on'
   trigger:
     platform: mqtt
@@ -9,9 +9,9 @@
     above: 50
     value_template: '{{ state.state }}'
   action:
-    - service: mqtt.publish
-      data_template:
-        topic: 'location/juul_iphone'
-        retain: true
-        payload: 'home'
+    service: mqtt.publish
+    data_template:
+      topic: 'location/juul_iphone'
+      retain: true
+      payload: 'home'
 
