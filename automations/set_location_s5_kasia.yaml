@@ -1,0 +1,17 @@
+alias: 'Peter Set Location Home'
+initial_state: 'on'
+trigger:
+  platform: mqtt
+  topic: '!secret samsungs8_mqtt_topic'
+condition:
+  condition: numeric_state
+  entity_id: sensor.peter_s8_presence
+  above: 50
+  value_template: '{{ state.state }}'
+action:
+  service: mqtt.publish
+  data_template:
+    topic: 'location/peter_s8'
+    retain: true
+    payload: 'home'
+

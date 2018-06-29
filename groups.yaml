@@ -282,6 +282,10 @@
       - sensor.volkswagen
       - sensor.juul
       - sensor.jorn
+      - sensor.juul_iphone
+      - sensor.jorn_honor_9
+      - sensor.kasia_iphone
+      - sensor.peter_s8
   meter_readings:
     name: Energie meters
     entities:

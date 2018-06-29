@@ -1,0 +1,17 @@
+alias: 'Kasia Set Location Home'
+initial_state: 'on'
+trigger:
+  platform: mqtt
+  topic: '!secret iphone5_mqtt_topic'
+condition:
+  condition: numeric_state
+  entity_id: sensor.kasia_iphone_presence
+  above: 50
+  value_template: '{{ state.state }}'
+action:
+  service: mqtt.publish
+  data_template:
+    topic: 'location/kasia_iphone'
+    retain: true
+    payload: 'home'
+

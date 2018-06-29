@@ -155,7 +155,45 @@
     state_topic: 'location/juul_iphone'
     name: 'Juul iPhone'
     icon: mdi:mdi-cellphone-iphone
-  
+    value_template: "{% if is_state('sensor.juul_iphone', 'home') %}thuis{% else %}niet thuis{% endif %}"
+
+  - platform: mqtt
+    name: "Kasia iPhone presence" 
+    state_topic: !secret iphone5_mqtt_topic
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+
+  - platform: mqtt
+    state_topic: 'location/kasia_iphone'
+    name: 'Kasia iPhone'
+    icon: mdi:mdi-cellphone-iphone
+    value_template: "{% if is_state('sensor.kasia_iphone', 'home') %}thuis{% else %}niet thuis{% endif %}"
+
+  - platform: mqtt
+    name: "Peter Galaxy S8 presence" 
+    state_topic: !secret samsugs8_mqtt_topic
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+
+  - platform: mqtt
+    state_topic: 'location/peter_s8'
+    name: 'Peter Galaxy S8'
+    icon: mdi:mdi-cellphone-iphone
+    value_template: "{% if is_state('sensor.peter_s8', 'home') %}thuis{% else %}niet thuis{% endif %}"
+
+  - platform: mqtt
+    name: "Jron Honor 9 presence" 
+    state_topic: !secret honor_9_mqtt_topic
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+
+  - platform: mqtt
+    state_topic: 'location/jorn_honor_9'
+    name: 'Jorn Honor 9'
+    icon: mdi:mdi-cellphone-iphone
+    value_template: "{% if is_state('sensor.jorn_honor_9', 'home') %}thuis{% else %}niet thuis{% endif %}"
+    
+
     
   - platform: postnl
     username: !secret postnl_user

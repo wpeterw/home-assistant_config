@@ -1,0 +1,16 @@
+alias: 'Jorn Set Location Not_Home'
+initial_state: 'on'
+trigger:
+  platform: mqtt
+  topic: !secret honor9_mqtt_topic
+condition:
+  condition: numeric_state
+  entity_id: sensor.jorn_honor_9_presence
+  below: 50
+  value_template: '{{ state.state }}'
+action:
+  service: mqtt.publish
+  data_template:
+    topic: 'location/jorn_honor_9'
+    retain: true
+    payload: 'not_home'
