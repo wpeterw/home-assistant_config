@@ -5,7 +5,7 @@ trigger:
   topic: !secret samsungs8_mqtt_topic
 condition:
   condition: numeric_state
-  entity_id: sensor.peter_s8_presence
+  entity_id: sensor.peter_galaxy_s8_presence
   below: 50
   value_template: '{{ state.state }}'
 action:
