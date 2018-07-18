@@ -4,7 +4,7 @@
             state: on
             transition: 3
             brightness: 110
-        light.keuken_midden:
+        light.keuken_miden:
             state: on
             transition: 3
             brightness: 110
