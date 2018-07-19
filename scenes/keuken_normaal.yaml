@@ -20,7 +20,7 @@
             state: on
             transition: 3
             brightness: 110
-        light.aarecht_rechts:
+        light.aanrecht_rechts:
             state: on
             transition: 3
             brightness: 110
