@@ -1,4 +1,4 @@
-  alias: Buiten verlichting aan 
+  alias: Buiten verlichting aan.
   initial_state: 'on'
   trigger:
     platform: sun
