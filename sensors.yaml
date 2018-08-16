@@ -188,7 +188,20 @@
     state_topic: 'location/jorn_honor_9'
     name: 'Jorn Honor 9'
     icon: mdi:cellphone-iphone
-        
+  
+  - platform: mqtt
+    state_topic: "zigbee2mqtt/xiaomi_cube"
+    availability_topic: "zigbee2mqtt/bridge/state"
+    icon: "mdi:gesture-double-tap"
+    value_template: "{{ value_json.action }}"
+    json_attributes: 
+      - "battery"
+      - "voltage"
+      - "angle"
+      - "side"
+      - "from_side"
+      - "to_side"
+      - "brightness"
 
     
   - platform: postnl
