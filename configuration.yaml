@@ -110,10 +110,4 @@ rest_command:
 ffmpeg:
   ffmpeg_bin: /usr/bin/ffmpeg
 
-camera:
-  - platform: xiaomi
-    name: Woonkamer
-    host: !secret xiaofang_ip
-    model: 'xiaofang'
-    password: foo_bar
 

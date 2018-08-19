@@ -3,7 +3,6 @@
     name: Home
     entities:
       - group.woonkamer
-      - group.camera
       - group.hal
       - group.logeerkamer
       - group.keuken_hanglampen
@@ -402,7 +401,3 @@
     entities:
       - sensor.postnl
   
-  camera:
-    name: Woonkamer
-    entities:
-      - camera.woonkamer
