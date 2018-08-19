@@ -190,6 +190,7 @@
     icon: mdi:cellphone-iphone
   
   - platform: mqtt
+    friendly_name: 'Xiaomi Cube'
     state_topic: "zigbee2mqtt/xiaomi_cube"
     availability_topic: "zigbee2mqtt/bridge/state"
     icon: "mdi:gesture-double-tap"
