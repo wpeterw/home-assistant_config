@@ -78,9 +78,9 @@ sensor.fibaro_system_fgms001_motion_sensor_luminance:
   friendly_name: Lux keuken
 sensor.greenwave_powernode_1_port_previous_reading:
   friendly_name: Verbruik koelkast en vriezer
-sensor.temperature_158d00010f74bc:
+sensor.xiaomi_sensor_kelder_temperature:
   friendly_name: Temperatuur kelder
-sensor.humidity_158d00010f74bc:
+sensor.xiaomi_sensor_kelder_humidity:
   friendly_name: Luchtvochtigheid kelder
 sensor.humidity_158d0001109dc6:
   friendly_name: Luchtvochtigheid slaapkamer
