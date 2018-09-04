@@ -190,8 +190,8 @@
     entities:
       - light.slaapkamer_voor
       - light.slaapkamer_achter
-      - sensor.temperature_158d0001109dc6
-      - sensor.humidity_158d0001109dc6
+      - sensor.xiaomi_sensor_slaapkamer_humidity
+      - sensor.xiaomi_sensor_slaapkamer_temperature
   slaapkamer_jorn:
     name: Slaapkamer Jorn
     entities:
