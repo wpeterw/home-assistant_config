@@ -146,50 +146,6 @@
     unit_of_measurement: "kWh"
 
   - platform: mqtt
-    name: "Juul iPhone presence" 
-    state_topic: !secret iphone7_mqtt_topic
-    value_template: '{{ value_json.confidence }}'
-    unit_of_measurement: '%'
-
-  - platform: mqtt
-    state_topic: 'location/juul_iphone'
-    name: 'Juul iPhone'
-    icon: mdi:cellphone-iphone
-    
-  - platform: mqtt
-    name: "Kasia iPhone presence" 
-    state_topic: !secret iphone5_mqtt_topic
-    value_template: '{{ value_json.confidence }}'
-    unit_of_measurement: '%'
-
-  - platform: mqtt
-    state_topic: 'location/kasia_iphone'
-    name: 'Kasia iPhone'
-    icon: mdi:cellphone-iphone
-    
-  - platform: mqtt
-    name: "Peter Galaxy S8 presence" 
-    state_topic: !secret samsungs8_mqtt_topic
-    value_template: '{{ value_json.confidence }}'
-    unit_of_measurement: '%'
-
-  - platform: mqtt
-    state_topic: 'location/peter_s8'
-    name: 'Peter Galaxy S8'
-    icon: mdi:cellphone-iphone
-    
-  - platform: mqtt
-    name: "Jorn Honor 9 presence" 
-    state_topic: !secret honor_9_mqtt_topic
-    value_template: '{{ value_json.confidence }}'
-    unit_of_measurement: '%'
-
-  - platform: mqtt
-    state_topic: 'location/jorn_honor_9'
-    name: 'Jorn Honor 9'
-    icon: mdi:cellphone-iphone
-  
-  - platform: mqtt
     friendly_name: 'Xiaomi Cube'
     state_topic: "zigbee2mqtt/xiaomi_cube"
     availability_topic: "zigbee2mqtt/bridge/state"
@@ -206,7 +162,7 @@
   
   - platform: "mqtt"
     friendly_name: 'Temperatuur kelder'
-    state_topic: "zigbee2mqtt/xiaomi_sensor_kelder_temperature"
+    state_topic: "zigbee2mqtt/xiaomi_sensor_kelder"
     availability_topic: "zigbee2mqtt/bridge/state"
     unit_of_measurement: "°C"
     icon: "mdi:temperature-celsius"
@@ -217,7 +173,7 @@
 
   - platform: "mqtt"
     friendly_name: 'Luchtvochtigheid kelder'
-    state_topic: "zigbee2mqtt/xiaomi_sensor_kelder_humidity"
+    state_topic: "zigbee2mqtt/xiaomi_sensor_kelder"
     availability_topic: "zigbee2mqtt/bridge/state"
     unit_of_measurement: "%"
     icon: "mdi:water-percent"
