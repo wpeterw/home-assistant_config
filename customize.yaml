@@ -82,9 +82,9 @@ sensor.xiaomi_sensor_kelder_temperature:
   friendly_name: Temperatuur kelder
 sensor.xiaomi_sensor_kelder_humidity:
   friendly_name: Luchtvochtigheid kelder
-sensor.xiaomo_sensor_slaapkamer_humidity:
+sensor.xiaomi_sensor_slaapkamer_humidity:
   friendly_name: Luchtvochtigheid slaapkamer
-sensor.xiaomo_sensor_slaapkamer_temperature:
+sensor.xiaomi_sensor_slaapkamer_temperature:
   friendly_name: Temperatuur slaapkamer
 switch.sonoff_lamp1:
   friendly_name: Hanglamp achter
