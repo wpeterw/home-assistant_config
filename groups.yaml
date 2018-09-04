@@ -233,8 +233,8 @@
   kelder:
     name: Kelder
     entities:
-      - sensor.temperature_158d00010f74bc
-      - sensor.humidity_158d00010f74bc
+      - sensor.xiaomi_sensor_kelder_humidity
+      - sensor.xiaomi_sensor_kelder_temperature
   hal:
     name: hal
     entities:
