@@ -1,4 +1,4 @@
-  alias: Verlichting keuken aan
+  alias: Verlichting woonkamer aan
   initial_state: 'on'
   trigger:
     platform: sun
