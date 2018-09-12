@@ -3,14 +3,15 @@
   trigger:
     platform: time
     at: "07:00:00"
-  condition: time
-  weekday:
-    - mon 
-    - fri 
-  action:
-    - service: scene.turn_on
-      entity_id: scene.woonkamer_normaal
-    - service: scene.turn_on
-      entity_id: scene.keuken_normaal
-    - service: input_boolean.turn_on
-      entity_id: input_boolean.scene_woonkamer_normaal
+  condition: 
+    condition: time
+    weekday:
+      - mon 
+      - fri 
+    action:
+      - service: scene.turn_on
+        entity_id: scene.woonkamer_normaal
+      - service: scene.turn_on
+        entity_id: scene.keuken_normaal
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.scene_woonkamer_normaal
