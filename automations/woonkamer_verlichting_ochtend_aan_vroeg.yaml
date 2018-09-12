@@ -1,18 +1,53 @@
-  alias: Verlichting woonkamer ochtend aan vroeg
-  initial_state: 'on'
-  trigger:
-    platform: time
-    at: "06:00:00"
-  condition:
-    condition: time
-    weekday:
-      - tue 
-      - wed 
-      - thu
+  # alias: Verlichting woonkamer ochtend aan vroeg
+  # initial_state: 'on'
+  # trigger:
+  #   platform: time
+  #   at: "06:00:00"
+  # condition:
+  #   condition: time
+  #   weekday:
+  #     - tue 
+  #     - wed 
+  #     - thu
+  #   action:
+  #     - service: scene.turn_on
+  #       entity_id: 
+  #         - scene.woonkamer_normaal
+  #         - scene.keuken_normaal
+  #     - service: input_boolean.turn_on
+  #       entity_id: input_boolean.scene_woonkamer_normaal
+  - alias: 'Wake Me Up'
+    trigger:
+      platform: template
+      value_template: '{{ now.time().strftime("%-H") == states.input_slider.alarmhour.state and now.time().strftime("%-M") == states.input_slider.alarmminutes.state }}'
+    condition:
+      condition: or
+      conditions:
+        - condition: and
+          conditions:
+            - condition: state
+              entity_id: input_boolean.alarmstatus
+              state: 'on'
+            - condition: state
+              entity_id: input_boolean.alarmweekday
+              state: 'on'
+            - condition: time
+              weekday:
+                - mon
+                - tue
+                - wed
+                - thu
+                - fri
+        - condition: and
+          conditions:
+            - condition: state
+              entity_id: input_boolean.alarmstatus
+              state: 'on'
+            - condition: state
+              entity_id: input_boolean.alarmweekday
+              state: 'off'
     action:
-      - service: scene.turn_on
-        entity_id: 
-          - scene.woonkamer_normaal
-          - scene.keuken_normaal
-      - service: input_boolean.turn_on
-        entity_id: input_boolean.scene_woonkamer_normaal
+      service: notify.notify
+      data:
+        message: 'Good morning. Time to Wake Up!'
+        title: ""
