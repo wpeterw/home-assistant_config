@@ -76,7 +76,7 @@ cloud:
       group.wc:
         name: Toilet
       group.woonkamer:
-        name: Living room          
+        name: Woonkamer          
 
 # includes ###############################################################
 
