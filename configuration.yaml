@@ -63,8 +63,8 @@ sun:
 cloud:
   google_actions:
     filter:
-      exclude_entities:
-        - sensor
+      exclude_domains:
+        - sensors
 
 # includes ###############################################################
 
