@@ -65,6 +65,7 @@ cloud:
     filter:
       exclude_domains:
         - sensors
+        - device_tracker
 
 # includes ###############################################################
 
