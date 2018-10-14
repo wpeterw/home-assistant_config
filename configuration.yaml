@@ -63,17 +63,8 @@ sun:
 cloud:
   google_actions:
     filter:
-      include_entities:
-        - group.wc
-        - group.woonkamer
-      include_domains:
-        - scenes
-    entity_config:
-      group.wc:
-        name: Toilet
-      group.woonkamer:
-        name: Woonkamer
-        room: Woonkamer          
+      exclude_entities:
+        - sensor
 
 # includes ###############################################################
 
