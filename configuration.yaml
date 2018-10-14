@@ -14,9 +14,6 @@ discovery:
 zwave:
  usb_path: /dev/ttyACM0
 
-tradfri:
-  host: 192.168.1.119
-
 hue:
 
 xiaomi_aqara:
@@ -38,9 +35,6 @@ http:
   api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   base_url: !secret base_url
-  cors_allowed_origins:
-    - https://reformedreality.com
-    - http://reformedreality.com
 
 #Node-Red iframe
 panel_iframe:
@@ -68,6 +62,10 @@ sun:
 
 cloud:
   google_actions:
+    exposed_domains:
+        - group
+        - light
+        - switch
     filter:
       include_entities:
         - group.wc
@@ -76,7 +74,8 @@ cloud:
       group.wc:
         name: Toilet
       group.woonkamer:
-        name: Woonkamer          
+        name: Woonkamer
+        room: Woonkamer          
 
 # includes ###############################################################
 
