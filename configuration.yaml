@@ -62,14 +62,12 @@ sun:
 
 cloud:
   google_actions:
-    exposed_domains:
-        - group
-        - light
-        - switch
     filter:
       include_entities:
         - group.wc
         - group.woonkamer
+      include_domains:
+        - scenes
     entity_config:
       group.wc:
         name: Toilet
