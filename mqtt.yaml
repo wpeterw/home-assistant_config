@@ -1,4 +1,5 @@
   discovery: true
+  discovery_prefix: homeassistant
   broker: 192.168.1.26
   port: 1883
   client_id: home-assistant
