@@ -1,29 +1,20 @@
-say:
-  alias: Sonos TTS
-  sequence:
-    - service: media_player.sonos_snapshot
-      data_template:
-        with_group: yes
-    - delay: '00:00:03'
-    - service: media_player.sonos_unjoin
-      data_template:
-        entity_id: "{{ where }}"
-    - delay: '00:00:01'
-    - service: media_player.sonos_join
-      data_template:
-        master: "{{ master }}"
-        entity_id: "{{ where }}"
-    - delay: '00:00:01'
-    - service: media_player.volume_set
-      data_template:
-        entity_id: "{{ where }}"
-        volume_level: "{{ volume }}"
-    - delay: '00:00:02'
-    - service: tts.google_say
-      data_template:
-        entity_id: "{{ master }}"
-        message: "{{ what }}"
-    - delay: '00:00:25'
-    - service: media_player.sonos_restore
-      data_template:
-        with_group: yes
+# Starts the PS4 with the specified App
+# use with "Start $ on the PS4"
+  ps4_start_x:
+    alias: "PS4 Start X"
+    sequence:
+      - service: shell_command.ps4_start_app
+        data_template:
+          app_id: >
+            {% if (title == "Netflix") %}
+                CUSA00127
+            {% elif (title == "Amazon") %}
+                CUSA00126
+            {% elif (title == "Horizon") %}
+                CUSA07320
+            {% endif %}
+#     Also kick the Harmony hub to turn on TV & Amp:
+      - service:  remote.turn_on
+        data_template:
+          entity_id: remote.hubi
+          activity: 20685489

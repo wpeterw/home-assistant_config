@@ -63,9 +63,11 @@ sun:
 cloud:
   google_actions:
     filter:
-      exclude_domains:
-        - sensors
-        - device_tracker
+      include_domains:
+        - group
+        - switch
+        - scene
+        - script
 
 # includes ###############################################################
 
