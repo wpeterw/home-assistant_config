@@ -119,7 +119,8 @@
     entities:
       - light.dressoir
       - light.lamp_achter_bank
-      - light.eettafel
+      - light.eettafel_1
+      - light.eettafel_2
       - light.lotek_lamp
       - light.hue_iris
       - switch.hanglamp_voor
