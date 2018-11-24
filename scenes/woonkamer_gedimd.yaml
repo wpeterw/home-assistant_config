@@ -1,6 +1,11 @@
   - name: Woonkamer gedimd
     entities:
-        light.eettafel:
+        light.eettafel_1:
+            state: on
+            transition: 2
+            brightness: 150
+            rgb_color: [255,147,41]
+        light.eettafel_2:
             state: on
             transition: 2
             brightness: 150
