@@ -17,7 +17,7 @@ views:
         # Entities card will take a list of entities and show their state.
       - type: entities
         # Title of the entities card
-        title: Woonkamer
+      - title: Woonkamer
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
@@ -33,3 +33,9 @@ views:
             name: Hue Iris
           - entity: group.hanglampen
             name: Hanglampen
+      - title: Toilet
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: group.wc
+            name: Toilet
