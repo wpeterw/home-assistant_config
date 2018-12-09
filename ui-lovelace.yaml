@@ -33,6 +33,7 @@ views:
             name: Hue Iris
           - entity: group.hanglampen
             name: Hanglampen
+      - type: entities
       - title: Toilet
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
