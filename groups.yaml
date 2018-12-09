@@ -135,6 +135,11 @@
     entities:
       - switch.hanglamp_voor
       - switch.hanglamp_achter
+  eettafel:
+    name: eettafel
+    entities:
+      - light.eettafel_1
+      - light.eettafel_2
   Weer:
     name: Weer
     entities:
