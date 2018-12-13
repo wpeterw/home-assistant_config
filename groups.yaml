@@ -148,10 +148,10 @@
       - sensor.annen_minimum_temperature_1d
       - sensor.annen_symbol
   Logeerkamer:
-      -  light.dimmable_light_1
-      -  light.dimmable_light_1_2
-      -  light.dimmable_light_2 
-      -  light.dimmable_light_3
+      -  light.tradfri_bulb_gu10_w_400lm_4
+      -  light.tradfri_bulb_gu10_w_400lm_2
+      -  light.tradfri_bulb_gu10_w_400lm_3
+      -  light.tradfri_bulb_gu10_w_400lm_4_2
   buiten:
     name: Buiten
     entities:
