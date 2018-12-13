@@ -66,11 +66,6 @@
     name: Media
     entities:
       - group.media
-  family_view:
-    view: yes
-    name: Presence
-    entities:
-      - group.family
   energie_view:
     view: yes
     name: Energie
@@ -234,9 +229,9 @@
     entities:
       - light.bijkeuken
       - light.wasruimte
-      - switch.greenwave_powernode_1_port_switch_3_0
       - switch.wasmachine
       - switch.wasdroger
+      - switch.greenwave_powernode_1_port_switch
   kelder:
     name: Kelder
     entities:
@@ -270,7 +265,6 @@
       - sensor.beweging_woonkamer
       - sensor.beweging_hal
       - sensor.beweging_keuken
-      - sensor.motion_bijkeuken
       - sensor.beweging_veranda
       - sensor.beweging_slaapkamer
       - sensor.achterdeur_sensor
@@ -281,17 +275,6 @@
       - sensor.dakraam_overloop_sensor
       - sensor.dakraam_badkamer_achter_sensor
       - sensor.dakraam_badkamer_voor_sensor
-  family:
-    name: Presence
-    entities:
-      - sensor.mercedes
-      - sensor.volkswagen
-      - sensor.juul
-      - sensor.jorn
-      - sensor.juul_iphone
-      - sensor.jorn_honor_9
-      - sensor.kasia_iphone
-      - sensor.peter_galaxy_s8
   meter_readings:
     name: Energie meters
     entities:
@@ -334,7 +317,6 @@
     name: System monitor
     entities:
       - sensor.last_boot
-      - sensor.since_last_boot
       - sensor.load_1m
       - sensor.memory_use_percent
       - sensor.disk_use_percent_
@@ -390,12 +372,6 @@
     entities:
       - sensor.camera_veranda
       - sensor.camera_garage
-  batterylevels:
-   name: Batterij status
-   entities:
-      - sensor.badkamer 
-      - sensor.wc
-  
   build_status:
     name: Build status
     entities:
