@@ -243,7 +243,7 @@
   hal:
     name: hal
     entities:
-      - light.hal_beneden
+      - light.hal
   wc:
     name: wc
     entities:
