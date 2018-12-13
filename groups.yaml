@@ -179,13 +179,12 @@
   badkamer:
     name: Badkamer
     entities:
-      - light.badkamer_1
-      - light.badkamer_2
-      - light.badkamer_3
-      - light.badkamer_4
-      - light.badkamer_5
-      - light.badkamer_6
-      - light.badkamer_7
+      - light.badkamer_1_2
+      - light.badkamer_2_2
+      - light.badkamer_3_2
+      - light.badkamer_4_2
+      - light.badkamer_5_2
+      - light.badkamer_6_2
   slaapkamer_juul:
     name: Slaapkamer Juul
     entities:
