@@ -2,7 +2,7 @@
   initial_state: 'on'  
   trigger:
     - platform: time
-      hours: 0
+      hours: 10
       minutes: 10
       seconds: 00
   action:
