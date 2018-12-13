@@ -147,7 +147,7 @@
       - sensor.annen_temperature_1d
       - sensor.annen_minimum_temperature_1d
       - sensor.annen_symbol
-  Logeerkamer:
+  Slaapkamer:
       -  light.tradfri_bulb_gu10_w_400lm_4
       -  light.tradfri_bulb_gu10_w_400lm_2
       -  light.tradfri_bulb_gu10_w_400lm_3
