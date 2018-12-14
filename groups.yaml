@@ -235,6 +235,8 @@
   kelder:
     name: Kelder
     entities:
+      - light.kelder_voor
+      - light.kleder_achter
       - sensor.xiaomi_sensor_kelder_humidity
       - sensor.xiaomi_sensor_kelder_temperature
   hal:

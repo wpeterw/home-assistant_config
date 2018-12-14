@@ -1,0 +1,10 @@
+  alias: Verlichting kelder aan
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.door_window_sensor_158d00013ee023
+    to: 'off'
+  action:
+    service: light.turn_off
+      - light.kelder_voor
+      - light.kelder_acter

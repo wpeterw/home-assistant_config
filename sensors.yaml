@@ -280,8 +280,8 @@
         friendly_name: 'Dakraam slaapkamer Juul'
         icon_template: mdi:window-open
         value_template: '{% if states.binary_sensor.door_window_sensor_158d000110d992.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
-      dakraam_overloop_sensor:
-        friendly_name: 'Dakraam overloop'
+      kelderdeur_sensor:
+        friendly_name: 'Kelderdeur'
         icon_template: mdi:window-open
         value_template: '{% if states.binary_sensor.door_window_sensor_158d00013ee023.state == "on"%} Open {%- else -%} Dicht {%- endif -%}'
       dakraam_slaapkamer_jorn_sensor:
