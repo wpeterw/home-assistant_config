@@ -3,7 +3,7 @@
   trigger:
     platform: state
     entity_id: binary_sensor.door_window_sensor_158d00013ee023
-    to: 'off'
+    to: 'on'
   action:
     service: homeassistant.turn_on
     entity_id:
