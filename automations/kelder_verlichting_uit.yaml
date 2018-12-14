@@ -6,5 +6,6 @@
     to: 'off'
   action:
     service: homeassistant.turn_off
+    entity_id:
+      - light.kelder_achter
       - light.kelder_voor
-      - light.kelder_acter
