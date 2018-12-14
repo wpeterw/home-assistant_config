@@ -1,4 +1,4 @@
-  alias: Verlichting kelder aan
+  alias: Verlichting kelder uit
   initial_state: 'on'
   trigger:
     platform: state
