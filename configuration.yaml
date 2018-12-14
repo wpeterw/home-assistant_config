@@ -94,9 +94,4 @@ rest_command:
       AUTH-TOKEN: !secret token
     payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746 }}}'
 
-# Cameras ###################################################################
-
-ffmpeg:
-  ffmpeg_bin: /usr/bin/ffmpeg
-
 
