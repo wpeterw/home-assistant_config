@@ -45,6 +45,9 @@
   - platform: travisci
     api_key: !secret travis_key
 
+  - platform: pi_hole
+    host: 192.168.1.26
+    
   - platform: dsmr
     host: 192.168.1.155
     port: 2001
