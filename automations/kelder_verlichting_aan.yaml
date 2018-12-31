@@ -7,5 +7,5 @@
   action:
     service: homeassistant.turn_on
     entity_id:
+      - light.kelder_achter
       - light.kelder_voor
-      - light.kelder_acter
