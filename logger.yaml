@@ -19,7 +19,7 @@ logs:
   homeassistant.components.sensor.pi_hole: critical
   homeassistant.components.recorder: critical
   homeassistant.components.zwave: warn
-  homeassistant.components.darksky: debug
+  homeassistant.components.rest: debug
   homeassistant.exceptions: info
   pyps4.ddp: critical
   py.warnings: error
