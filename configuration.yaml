@@ -71,7 +71,6 @@ cloud:
 
 group: !include groups.yaml
 automation: !include_dir_list automations/
-rest: !include_dir_list rest/
 script: !include scripts.yaml
 scene: !include_dir_list scenes/
 sensor: !include sensors.yaml
