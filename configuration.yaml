@@ -82,7 +82,6 @@ device_tracker: !include devicetrackers.yaml
 switch: !include switches.yaml
 notify: !include notify.yaml
 input_boolean: !include input_boolean.yaml
-rest_command: !include_dir_list rest/
 
 # rest ###################################################################
 # Geccorrigeerde stand ivm metervervanging. Stand oude meter: 3746
