@@ -86,13 +86,13 @@ rest_command: !include_dir_list rest/
 
 # rest ###################################################################
 # Geccorrigeerde stand ivm metervervanging. Stand oude meter: 3746
-#rest_command:
-#  post_meterstanden:
-#    method: POST
-#    url: 'https://www.mindergas.nl/api/gas_meter_readings'
-#    headers:
-#      content-type: application/json
-#      AUTH-TOKEN: !secret token
-#    payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746 }}}'
+rest_command:
+  post_meterstanden:
+    method: POST
+    url: 'https://www.mindergas.nl/api/gas_meter_readings'
+    headers:
+      content-type: application/json
+      AUTH-TOKEN: !secret token
+    payload: '{"date" : "{{states.sensor.yesterday.state}}","reading" : {{ states.sensor.gas_consumption.state | float + 3746.0 }}}'
 
 
