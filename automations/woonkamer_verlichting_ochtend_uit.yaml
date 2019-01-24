@@ -1,7 +1,7 @@
   alias: Verlichting woonkamer ochtend uit
   initial_state: 'on'
   trigger:
-    platform: time
+    platform: time_pattern
     at: "08:15:00"
   action:
     - service: light.turn_off
