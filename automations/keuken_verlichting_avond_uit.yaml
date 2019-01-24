@@ -1,9 +1,8 @@
   alias: Verlichting keuken uit
   initial_state: 'on'
   trigger:
-    platform: time_pattern
-    hours: 23
-    minutes: 30
+    platform: time
+    at: '23:30:00'
   action:
     service: scene.turn_on
     entity_id: scene.keuken_uit
