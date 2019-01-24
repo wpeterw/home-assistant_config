@@ -1,7 +1,7 @@
 alias: controleer of alle verlichting aan is woonkamer
 initial_state: 'on'
 trigger:
-  - platform: time
+  - platform: time_pattern
     minutes: '/5'
 condition:
   condition: and
