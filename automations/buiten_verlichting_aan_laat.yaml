@@ -1,7 +1,7 @@
   alias: Buiten verlichting aan laat
   initial_state: 'on'
   trigger:
-    platform: time
+    platform: time_pattern
     hours: 21
     minutes: 0
   action:
