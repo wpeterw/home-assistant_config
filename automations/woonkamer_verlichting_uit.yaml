@@ -1,4 +1,4 @@
-  alias: Verlichting woonkamer uit
+  alias: Verlichting woonkamer uit avond
   initial_state: 'on'
   trigger:
     platform: time
