@@ -321,7 +321,7 @@
       - sensor.last_boot
       - sensor.load_1m
       - sensor.memory_use_percent
-      - sensor.disk_use_percent_
+      - sensor.disk_use_percent
       - sensor.database_size
       - sensor.fastcom_download
   pihole:
