@@ -1,7 +1,7 @@
   alias: 'upload meterstand naar mindergas.nl'
   initial_state: 'on'  
   trigger:
-    - platform: time
+    - platform: time_pattern
       hours: 10
       minutes: 10
       seconds: 00
