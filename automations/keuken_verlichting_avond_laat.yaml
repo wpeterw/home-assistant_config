@@ -2,7 +2,8 @@
   initial_state: 'on'
   trigger:
     platform: time_pattern
-    at: "20:30:00"
+    hours: 20
+    minutes: 0
   action:
     service:  homeassistant.turn_off
     entity_id: group.keuken_aanrecht, group.keuken_achter
