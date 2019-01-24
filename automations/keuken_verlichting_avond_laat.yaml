@@ -1,7 +1,7 @@
   alias: Verlichting keuken aan laat
   initial_state: 'on'
   trigger:
-    platform: time
+    platform: time_pattern
     at: "20:30:00"
   action:
     service:  homeassistant.turn_off
