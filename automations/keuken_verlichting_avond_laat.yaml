@@ -1,9 +1,8 @@
   alias: Verlichting keuken aan laat
   initial_state: 'on'
   trigger:
-    platform: time_pattern
-    hours: 20
-    minutes: 0
+    platform: time
+    at: '20:00:00'
   action:
     service:  homeassistant.turn_off
     entity_id: group.keuken_aanrecht, group.keuken_achter
