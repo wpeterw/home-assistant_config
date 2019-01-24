@@ -1,7 +1,7 @@
   alias: Hanglampen uit
   initial_state: 'on'
   trigger:
-    platform: time
+    platform: time_pattern
     at: '23:30:00'
   action:
     service: switch.turn_off
