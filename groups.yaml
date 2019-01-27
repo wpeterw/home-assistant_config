@@ -323,7 +323,7 @@
       - sensor.memory_use_percent
       - sensor.disk_use_percent
       - sensor.database_size
-      - sensor.fastcom_download
+      - sensor.fast_com_download
   pihole:
     name: PiHole
     entities:
@@ -331,8 +331,8 @@
   haveibeenpwnd:
     name: Have I been pwnd
     entities:
-      - sensor.breaches_peterwieringagmailcom
-      - sensor.breaches_peterwieringame
+      - sensor.breaches_peter_wieringa_gmail_com
+      - sensor.breaches_peter_wieringa_me
   wasmachine_en_droger:
     name: Wassen en drogen
     entities:
