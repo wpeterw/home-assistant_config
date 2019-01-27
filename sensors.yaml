@@ -3,6 +3,9 @@
       - !secret email1
       - !secret email2
 
+  - platform: pi_hole
+    host: !secret pihole_dns
+
   - platform: buienradar
     name: Annen
     latitude: !secret latitude
