@@ -90,3 +90,21 @@ rest_command:
     payload: '{ "date": "{{(as_timestamp(now()) - (24*3600)) | timestamp_custom(''%Y-%m-%d'', True) }}", "reading" : "{{states.sensor.gas_consumption.state | float + 3746.0 }}" }'
 
 
+climate: 
+  - platform: mqtt 
+    qos: 1 
+    name: Badkamer Thermostaat
+    current_temperature_topic: thermostat/badkamer/current_temperature 
+    temperature_state_topic: thermostat/badkamer/target_temperature 
+    temperature_command_topic: thermostat/badkamer/target_temperature/set 
+    mode_state_topic: thermostat/badkamer/mode 
+    mode_command_topic: thermostat/badkamer/mode/set 
+    away_mode_state_topic: thermostat/badkamer/away 
+    away_mode_command_topic: thermostat/badkamer/away/set
+    payload_on: 'on'
+    payload_off: 'off'
+    modes: 
+      - heat 
+      - manual 
+      - boost 
+      - eco
