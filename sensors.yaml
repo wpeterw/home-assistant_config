@@ -175,6 +175,8 @@
       - "battery"
       - "voltage"
 
+  
+
 
   - platform: postnl
     username: !secret postnl_user
