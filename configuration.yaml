@@ -59,7 +59,9 @@ cloud:
       include_domains:
         - scene
         - script
-
+# weather ################################################################
+weather:
+  - platform: buienradar
 # includes ###############################################################
 
 group: !include groups.yaml
