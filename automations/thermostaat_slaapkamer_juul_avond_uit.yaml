@@ -1,0 +1,11 @@
+  alias: "Slaapkamer Juul thermostaat avond uit"
+  initial_state: True
+  trigger:
+    platform: time
+    at: '21:00:00'
+  action:
+    service: climate.set_temperature
+    data_template:
+    entity_id: climate.slaapkamer_juul_thermostaat
+      temperature: 18
+      operation_mode: Heat
