@@ -69,6 +69,7 @@ automation: !include_dir_list automations/
 script: !include scripts.yaml
 scene: !include_dir_list scenes/
 sensor: !include sensors.yaml
+sensor: !include templates.yaml
 logger: !include logger.yaml
 media_player: !include mediaplayers.yaml
 mqtt: !include mqtt.yaml
@@ -78,7 +79,6 @@ switch: !include switches.yaml
 notify: !include notify.yaml
 input_boolean: !include input_boolean.yaml
 climate: !include climate.yaml
-template: !include templates.yaml
 
 # rest ###################################################################
 # Geccorrigeerde stand ivm metervervanging. Stand oude meter: 3746
