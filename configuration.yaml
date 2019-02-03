@@ -69,7 +69,6 @@ automation: !include_dir_list automations/
 script: !include scripts.yaml
 scene: !include_dir_list scenes/
 sensor: !include sensors.yaml
-sensor: !include templates.yaml
 logger: !include logger.yaml
 media_player: !include mediaplayers.yaml
 mqtt: !include mqtt.yaml
