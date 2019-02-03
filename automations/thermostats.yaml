@@ -1,12 +1,13 @@
-  - alias: "Badkamer thermostaat ochtend aan"
-    initial_state: True
-    trigger:
-      platform: time
-      at: '06:00:00'
-    action:
-      service: climate.set_temperature
-      data_template:
-        entity_id: climate.badkamer_thermostaat
-        temperature: 22
-        operation_mode: Heat
+  alias: "Badkamer thermostaat ochtend aan"
+  initial_state: True
+  trigger:
+    platform: time
+    at: '06:00:00'
+  action:
+    service: climate.set_temperature
+    data_template:
+      entity_id: climate.badkamer_thermostaat
+      temperature: 22
+      operation_mode: Heat
 
+  
