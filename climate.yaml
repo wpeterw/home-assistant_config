@@ -1,0 +1,53 @@
+  - platform: mqtt 
+    qos: 1 
+    name: Badkamer Thermostaat
+    current_temperature_topic: thermostat/badkamer/current_temperature 
+    temperature_state_topic: thermostat/badkamer/target_temperature 
+    temperature_command_topic: thermostat/badkamer/target_temperature/set 
+    mode_state_topic: thermostat/badkamer/mode 
+    mode_command_topic: thermostat/badkamer/mode/set 
+    away_mode_state_topic: thermostat/badkamer/away 
+    away_mode_command_topic: thermostat/badkamer/away/set
+    payload_on: 'on'
+    payload_off: 'off'
+    modes: 
+      - heat 
+      - manual 
+      - boost 
+      - eco
+  
+  - platform: mqtt 
+    qos: 1 
+    name: Slaapkamer Jorn Thermostaat
+    current_temperature_topic: thermostat/slaapkamer_jorn/current_temperature 
+    temperature_state_topic: thermostat/slaapkamer_jorn/target_temperature 
+    temperature_command_topic: thermostat/slaapkamer_jorn/target_temperature/set 
+    mode_state_topic: thermostat/slaapkamer_jorn/mode 
+    mode_command_topic: thermostat/slaapkamer_jorn/mode/set 
+    away_mode_state_topic: thermostat/slaapkamer_jorn/away 
+    away_mode_command_topic: thermostat/slaapkamer_jorn/away/set
+    payload_on: 'on'
+    payload_off: 'off'
+    modes: 
+      - heat 
+      - manual 
+      - boost 
+      - eco
+  
+  - platform: mqtt 
+    qos: 1 
+    name: Slaapkamer Juul Thermostaat
+    current_temperature_topic: thermostat/slaapkamer_juul/current_temperature 
+    temperature_state_topic: thermostat/slaapkamer_juul/target_temperature 
+    temperature_command_topic: thermostat/slaapkamer_juul/target_temperature/set 
+    mode_state_topic: thermostat/slaapkamer_juul/mode 
+    mode_command_topic: thermostat/slaapkamer_juul/mode/set 
+    away_mode_state_topic: thermostat/slaapkamer_juul/away 
+    away_mode_command_topic: thermostat/slaapkamer_juul/away/set
+    payload_on: 'on'
+    payload_off: 'off'
+    modes: 
+      - heat 
+      - manual 
+      - boost 
+      - eco
