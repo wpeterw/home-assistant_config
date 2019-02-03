@@ -6,6 +6,6 @@
   action:
     service: climate.set_temperature
     data_template:
-    entity_id: climate.slaapkamer_juul_thermostaat
+      entity_id: climate.slaapkamer_juul_thermostaat
       temperature: 18
       operation_mode: Heat
