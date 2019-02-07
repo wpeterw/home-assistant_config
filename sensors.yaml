@@ -122,7 +122,7 @@
     unit_of_measurement: "kg"
 
   - platform: mqtt
-    friendly_name: 'Xiaomi Cube'
+    name: 'Xiaomi Cube'
     state_topic: "zigbee2mqtt/xiaomi_cube"
     availability_topic: "zigbee2mqtt/bridge/state"
     icon: "mdi:gesture-double-tap"
@@ -137,7 +137,7 @@
       - "brightness"
   
   - platform: "mqtt"
-    friendly_name: 'Temperatuur kelder'
+    name: 'Temperatuur kelder'
     state_topic: "zigbee2mqtt/xiaomi_sensor_kelder"
     availability_topic: "zigbee2mqtt/bridge/state"
     unit_of_measurement: "°C"
@@ -148,7 +148,7 @@
       - "voltage"
 
   - platform: "mqtt"
-    friendly_name: 'Luchtvochtigheid kelder'
+    name: 'Luchtvochtigheid kelder'
     state_topic: "zigbee2mqtt/xiaomi_sensor_kelder"
     availability_topic: "zigbee2mqtt/bridge/state"
     unit_of_measurement: "%"
@@ -159,7 +159,7 @@
       - "voltage"
 
   - platform: "mqtt"
-    friendly_name: 'Temperatuur slaapkamer'
+    name: 'Temperatuur slaapkamer'
     state_topic: "zigbee2mqtt/xiaomi_sensor_slaapkamer"
     availability_topic: "zigbee2mqtt/bridge/state"
     unit_of_measurement: "°C"
@@ -170,7 +170,7 @@
       - "voltage"
 
   - platform: "mqtt"
-    friendly_name: 'Luchtvochtigheid slaapkamer'
+    name: 'Luchtvochtigheid slaapkamer'
     state_topic: "zigbee2mqtt/xiaomi_sensor_slaapkamer"
     availability_topic: "zigbee2mqtt/bridge/state"
     unit_of_measurement: "%"
