@@ -89,3 +89,11 @@ rest_command:
       content-type: application/json
       AUTH-TOKEN: !secret token
     payload: '{ "date": "{{(as_timestamp(now()) - (24*3600)) | timestamp_custom(''%Y-%m-%d'', True) }}", "reading" : "{{states.sensor.gas_consumption.state | float + 3746.0 }}" }'
+    
+utility_meter:
+  energy:
+    source: sensor.meterstandstroomtotaal
+    cycle: daily
+
+   
+
