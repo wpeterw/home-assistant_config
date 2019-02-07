@@ -94,6 +94,8 @@ utility_meter:
   energy:
     source: sensor.meterstandstroomtotaal
     cycle: daily
-
+  gas:
+    source: sensor.meterstandgastotaal
+    cycle: daily
    
 
