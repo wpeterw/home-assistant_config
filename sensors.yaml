@@ -68,11 +68,6 @@
       - battery.runtime
       - battery.charge
   
-  - utility_meter:
-      energy:
-        source: sensor.meterstandstroomtotaal
-        cycle: daily
-
 # mqtt ##############################################################
 
   - platform: mqtt
