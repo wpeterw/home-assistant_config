@@ -70,7 +70,7 @@
   
   - utility_meter:
       energy:
-        source: sensor.power_consumption_high
+        source: sensor.meterstandstroomtotaal
         cycle: daily
 
 # mqtt ##############################################################
@@ -184,8 +184,6 @@
     json_attributes: 
       - "battery"
       - "voltage"
-
-  
 
 
   - platform: postnl
