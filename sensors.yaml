@@ -246,7 +246,7 @@
       meterstandstroomtotaal:
         friendly_name: 'Meterstand stroom'
         unit_of_measurement: 'kwh'
-        value_template: '{{ ((states.sensor.power_consumption_low.state | float ) - ( states.sensor.power_consumption_normal.state | float )) | round(2) }}'
+        value_template: '{{ ((states.sensor.power_consumption_low.state | float ) + ( states.sensor.power_consumption_normal.state | float )) | round(2) }}'
       achterdeur_sensor:
         friendly_name: 'Achterdeur'
         icon_template: mdi:glassdoor
