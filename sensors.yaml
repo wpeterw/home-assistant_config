@@ -67,6 +67,11 @@
       - input.voltage
       - battery.runtime
       - battery.charge
+  
+  - utility_meter:
+      energy:
+        source: sensor.power_consumption_high
+        cycle: daily
 
 # mqtt ##############################################################
 
