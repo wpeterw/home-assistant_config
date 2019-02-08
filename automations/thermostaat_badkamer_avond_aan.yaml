@@ -1,11 +1,11 @@
-  alias: "Badkamer thermostaat avond uit"
+  alias: "Badkamer thermostaat avond aan"
   initial_state: True
   trigger:
     platform: time
-    at: '21:00:00'
+    at: '18:00:00'
   action:
    service: climate.set_temperature
    data_template:
       entity_id: climate.badkamer_thermostaat
-      temperature: 18
+      temperature: 21
       operation_mode: Heat
