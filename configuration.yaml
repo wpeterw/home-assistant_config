@@ -97,5 +97,8 @@ utility_meter:
   gas:
     source: sensor.meterstandgastotaal
     cycle: daily
-   
+
+fastdotcom:
+  scan_interval:
+    minutes: 30
 
