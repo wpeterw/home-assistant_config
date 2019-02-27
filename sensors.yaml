@@ -213,8 +213,6 @@
     name: statistics stroomverbruik huidig
     entity_id: sensor.power_consumption
 
-  - platform: fastdotcom
-
   - platform: history_stats
     name: PS4 vandaag
     entity_id: media_player.playstation_4
